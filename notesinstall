@@ -1,8 +1,14 @@
-pacman -Sy fuzzel
+sudo pacman -Sy rofi
 sudo pacman -Sy signal-desktop
 sudo pacman -Sy obsidian
 sudo pacman -Sy python-pywal
 sudo pacman -Sy pamixer
+sudo pacman -Sy cmus
+
+## Screenshots ##
+sudo pacman -Sy grim
+sudo pacman -Sy swappy
+sudo pacman -Sy slurp
 
 ## Creates Home directories
 mkdir ~/Screenshots ~/Downloads ~/VS-Workspaces
