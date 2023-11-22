@@ -2,9 +2,10 @@ pacman -Sy fuzzel
 sudo pacman -Sy signal-desktop
 sudo pacman -Sy obsidian
 sudo pacman -Sy python-pywal
-git clone https://github.com/Tr1sm3gist0/wallpapers
-mkdir Screenshots
+sudo pacman -Sy pamixer
 
+## Creates Home directories
+mkdir ~/Screenshots ~/Downloads ~/VS-Workspaces
 
 ## Yay Packages ##
 ## swww ##
