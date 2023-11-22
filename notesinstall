@@ -1,10 +1,19 @@
-#!/bin/bash
-
 pacman -Sy fuzzel
 sudo pacman -Sy signal-desktop
 sudo pacman -Sy obsidian
 sudo pacman -Sy python-pywal
 git clone https://github.com/Tr1sm3gist0/wallpapers
 mkdir Screenshots
+
+
+## Yay Packages ##
+## swww ##
 yay -S swww
 swww init
+
+## nordvpn ##
+yay -S nordvpn-bin
+groupadd -r nordvpn
+gpasswd -a <username> nordvpn
+systemctl enable nordvpnd.service
+systemctl start nordvpnd.service
