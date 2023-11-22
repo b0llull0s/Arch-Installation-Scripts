@@ -1,0 +1,10 @@
+#!/bin/bash
+
+pacman -Sy fuzzel
+sudo pacman -Sy signal-desktop
+sudo pacman -Sy obsidian
+sudo pacman -Sy python-pywal
+git clone https://github.com/Tr1sm3gist0/wallpapers
+mkdir Screenshots
+yay -S swww
+swww init
