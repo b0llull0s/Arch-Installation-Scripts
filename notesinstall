@@ -18,6 +18,9 @@ mkdir ~/Screenshots ~/Downloads ~/VS-Workspaces
 yay -S swww
 swww init
 
+## librewolf ##
+yay -S librewolf
+
 ## nordvpn ##
 yay -S nordvpn-bin
 groupadd -r nordvpn
