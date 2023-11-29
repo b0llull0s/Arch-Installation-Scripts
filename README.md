@@ -70,9 +70,11 @@ The reason is divided on three is because is a good practise to reboot your syst
 
 With the first script you will enable the Black Arh repo and create home directories.
 
-Edit /etc/pacman.conf and reboot.
-
-Then just use the second script with sudo privileges to install the core of the packages for this build.
+Edit:
+```
+/etc/pacman.conf
+```
+And reboot your system, then just use the second script with sudo privileges to install the core of the packages for this build.
 
 Once is done you may like to reboot again otherwise just hit the third script.
 
