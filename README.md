@@ -36,7 +36,7 @@ You may like to desactivate the root user for security reasons and use sudo to m
 ```
 usermod -p '!' root
 ```
-Connect to the internet:
+Connect to internet:
 
 ```
 # Start iwctl
