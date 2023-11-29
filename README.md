@@ -76,12 +76,7 @@ Then just use the second script with sudo privileges to install the core of the 
 
 Once is done you may like to reboot again otherwise just hit the third script.
 
-It will Download the config files and my wallpaper collection, the build is set it in a way that you only need to add new jpgs to the w4llp4p3rs folder to be able to select then from the script to change the wallpapers
-
-```
-git clone [Your Repository Link] 
-```
-
+It will Download the config files and my wallpaper collection, the build is set it in a way that you only need to add new jpgs to the w4llp4p3rs folder to be able to select then from the script to change the wallpaper
 
 ## Keybindings
 
