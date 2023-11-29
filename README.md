@@ -64,12 +64,18 @@ cd ~/P4nic-Arch
 chmod +x *.sh
 ```
 
-If there something you dont want to install just removed or replace with your preferecences. Other wise just run the first script.\n
-The reason is divided on three is because is a good practise to reboot your system after some of those changes.\n
-With the first script you will enable the Black Arh repo and create home directories.\n
-Edit /etc/pacman.conf and reboot.\n
-Then just use the second script with sudo privileges to install the core of the packages for this build.\n
-Once is done you may like to reboot again otherwise just hit the third script.\n
+If there something you dont want to install just removed or replace with your preferecences. Other wise just run the first script.
+
+The reason is divided on three is because is a good practise to reboot your system after some of those changes.
+
+With the first script you will enable the Black Arh repo and create home directories.
+
+Edit /etc/pacman.conf and reboot.
+
+Then just use the second script with sudo privileges to install the core of the packages for this build.
+
+Once is done you may like to reboot again otherwise just hit the third script.
+
 It will Download the config files and my wallpaper collection, the build is set it in a way that you only need to add new jpgs to the w4llp4p3rs folder to be able to select then from the script to change the wallpapers
 
 ```
