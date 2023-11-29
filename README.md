@@ -5,10 +5,10 @@ Unlocked Black Arch repo and some basic utils on both configuration and software
 Custom script to swap wallpapers and the entire color scheme for the new wallpaper.
 
 Its divided on three scrips that are pretty straight forward as the archlinux installation script is.
-I will try to improve it gradually as there are more stuff that could be optimized. Some stuff that need to be finished:
+I will try to improve it gradually as there are more stuff that could be optimized. Some stuff that need to be pointed:
 
 - No battery icons as i don´t use batteries normally 
-- 
+- No session manager as Hyperland recommends to login from the TTY
 
 ### Details:
 
