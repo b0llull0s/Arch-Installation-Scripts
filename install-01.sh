@@ -1,6 +1,9 @@
 #!/bin/bash
+## Set Dark theme ##
+mkdir ~/.config/gtk-3.0
+touch ~/.config/gtk-3.0/settings.ini
 ## Removes Dolphin and dunst
-sudo pacman -Rs dolphin
+sudo pacman -Rs
 ## Creates Home directories
 mkdir ~/Screenshots ~/Downloads ~/VS-Workspaces
 cd Downloads
