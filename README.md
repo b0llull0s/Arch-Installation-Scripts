@@ -15,11 +15,11 @@ I will try to improve it gradually as there are more stuff that could be optimiz
 | Category               | Software               
 |------------------------|------------------------|
 | Window Manager         | Hyprland               |
-| Terminal Manager       | Alacritty/kitty        |
-| File Manager           | **Ranger**,**Nemo**    |
+| Terminal Manager       | Alacritty,kitty        |
+| File Manager           | Ranger,Nemo            |
 | Status Bar             | Waybar                 |
 | Launcher               | Rofi                   |
-| Shell                  | zsh                    |
+| Shell                  | Zsh                    |
 | Browser                | Librewolf              |
 | Text Editor            | neovim, Code-oSS       |
 
