@@ -1,4 +1,6 @@
 #!/bin/bash
+## Removes Dolphin and dunst
+sudo pacman -Rs dolphin
 ## Creates Home directories
 mkdir ~/Screenshots ~/Downloads ~/VS-Workspaces
 cd Downloads
