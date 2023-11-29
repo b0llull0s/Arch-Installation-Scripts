@@ -59,7 +59,7 @@ There may be other commands you would like to use prior archinstall in that case
 And wait for the install to finish, once is done reboot your system and download this repository:
 
 ```
-git clone [Your Repository Link]
+https://github.com/Tr1sm3gist0/P4n1c-Arch.git
 cd ~/P4nic-Arch
 chmod +x *.sh
 ```
