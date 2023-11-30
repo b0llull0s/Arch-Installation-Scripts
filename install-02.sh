@@ -57,6 +57,8 @@ sudo pacman -Sy grim
 sudo pacman -Sy swappy
 sudo pacman -Sy slurp
 ## Yay Packages ##
+## Fira Code Nerd ##
+yay -S ttf-firacode-nerd
 ## swww ##
 yay -S swww
 sudo swww init
