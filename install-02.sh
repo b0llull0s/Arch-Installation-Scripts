@@ -63,10 +63,10 @@ yay -S ttf-firacode-nerd
 yay -S swww
 sudo swww init
 ## librewolf ##
-yay -S librewolf
+yay -S librewolf-bin
 ## nordvpn ##
 yay -S nordvpn-bin
-sudo systemctl enable nordvpnd.service
-sudo systemctl start nordvpnd.service
+sudo systemctl enable nordvpnd
+sudo systemctl start nordvpnd
 ## 7-zip ##
 yay -S 7-zip
