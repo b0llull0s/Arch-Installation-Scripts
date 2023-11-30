@@ -10,6 +10,7 @@ cp -r 7h0seF1L3s/hypr ~/.config/hypr
 cp -r 7h0seF1L3s/waybar ~/.config/waybar
 cp -r 7h0seF1L3s/rofi ~/.config/rofi
 cp -r 7h0seF1L3s/swappy ~/.config/swappy
+cp 7h0seF1L3s/.zshrc ~/
 #cp .config/nvim/init.vim ~/.config/nvim/init.vim
 cp -r 7h0seF1L3s/val/templates ~/.config/val/templates
 ## Set pywal ##
