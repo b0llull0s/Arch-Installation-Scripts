@@ -42,6 +42,7 @@ sudo pacman -Sy btop
 sudo pacman -Sy neovim
 sudo pacman -Sy code
 ## Utils ##
+sudo pacman -Sy waybar
 sudo pacman -Sy python-pywal
 sudo pacman -Sy obsidian
 sudo pacman -Sy signal-desktop
@@ -57,12 +58,12 @@ sudo pacman -Sy swappy
 sudo pacman -Sy slurp
 ## Yay Packages ##
 ## swww ##
-sudo yay -S swww
+yay -S swww
 sudo swww init
 ## librewolf ##
-sudo yay -S librewolf
+yay -S librewolf
 ## nordvpn ##
-sudo yay -S nordvpn-bin
+yay -S nordvpn-bin
 sudo systemctl enable nordvpnd.service
 sudo systemctl start nordvpnd.service
 ## 7-zip ##
