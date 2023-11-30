@@ -18,4 +18,3 @@ wal -i ~/Downloads/w4llp4p3rs/1.jpg
 ## OMZSH ##
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "Finished! Do a sudo reboot."
-cp 7h0seF1L3s/.zshrc ~/.zshrc
