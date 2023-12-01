@@ -21,7 +21,7 @@ I will try to improve it gradually as there are more stuff that could be optimiz
 | Launcher               | Rofi                   |
 | Shell                  | Zsh                    |
 | Browser                | Librewolf              |
-| Text Editor            | neovim, visual Code    |
+| Text Editor            | neovim, Visual Code    |
 
 ### You also may want to check those:
 
