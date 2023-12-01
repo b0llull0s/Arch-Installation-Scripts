@@ -56,7 +56,12 @@ There may be other commands you would like to use prior archinstall in that case
 - Choose Hyperland as Desktop environment
 - Make sure dont choose any session manager as Hyperland recommends to login directly from the TTY.
 
-And wait for the install to finish, once is done reboot your system and download this repository:
+And wait for the install to finish, once is done reboot your system.
+Now you should need to connect to internet again, this time use networkmanager:
+```
+system net
+```
+and download this repository:
 
 ```
 https://github.com/Tr1sm3gist0/P4n1c-Arch.git
@@ -70,10 +75,7 @@ The reason is divided on three is because is a good practise to reboot your syst
 
 With the first script you will enable the Black Arh repo and create home directories.
 
-Edit:
-```
-/etc/pacman.conf
-```
+
 And reboot your system, then just use the second script with sudo privileges to install the core of the packages for this build.
 
 Once is done you may like to reboot again otherwise just hit the third script.
