@@ -56,7 +56,8 @@ sudo pacman -S virtualbox-guest-utils
 sudo pacman -Sy grim
 sudo pacman -Sy swappy
 sudo pacman -Sy slurp
-## Yay Packages ##
+## Python ##
+pacman -S python-requests
 ## Fira Code Nerd ##
 yay -S ttf-firacode-nerd
 ## swww ##
