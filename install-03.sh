@@ -1,7 +1,7 @@
 #!/bin/bash
 ## Github Repos ##
-git clone https://github.com/Tr1sm3gist0/w4llp4p3rs
-git clone https://github.com/Tr1sm3gist0/7h0seF1L3s
+git clone https://github.com/b0llull0s/w4llp4p3rs
+git clone https://github.com/b0llull0s/7h0seF1L3s
 mv w4llp4p3rs ~/Downloads/
 ## Dot Files ##
 cp -r 7h0seF1L3s/alacritty ~/.config/
