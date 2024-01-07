@@ -52,6 +52,7 @@ pacman -Sy cliphist
 ## Virtual Box ##
 pacman -Sy virtualbox
 pacman -S virtualbox-guest-utils 
+pacman -S virtualbox-host-modules-arch
 ## Screenshots ##
 pacman -Sy grim
 pacman -Sy swappy
