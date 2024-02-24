@@ -47,8 +47,10 @@ pacman -Sy python-pywal
 pacman -Sy obsidian
 pacman -Sy signal-desktop
 pacman -Sy bleachbit
-pacman -Sy wireshark-qt
 pacman -Sy cliphist
+## Wireshark ##
+pacman -Sy wireshark-qt
+sudo chmod +x /usr/bin/dumpcap
 ## Virtual Box ##
 pacman -Sy virtualbox
 pacman -S virtualbox-guest-utils 
