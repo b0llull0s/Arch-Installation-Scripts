@@ -39,29 +39,29 @@ sudo pacman -Sy nemo
 ## Task Manager ##
 sudo pacman -Sy btop
 ## Code Editors ##
-pacman -Sy neovim
-pacman -Sy code
+sudo pacman -Sy neovim
+sudo pacman -Sy code
 ## Utils ##
-pacman -Sy waybar
-pacman -Sy python-pywal
-pacman -Sy obsidian
-pacman -Sy signal-desktop
-pacman -Sy bleachbit
-pacman -Sy cliphist
+sudo pacman -Sy waybar
+sudo pacman -Sy python-pywal
+sudo pacman -Sy obsidian
+sudo pacman -Sy signal-desktop
+sudo pacman -Sy bleachbit
+sudo pacman -Sy cliphist
 ## Wireshark ##
-pacman -Sy wireshark-qt
+sudo pacman -Sy wireshark-qt
 sudo chmod +x /usr/bin/dumpcap
 ## Virtual Box ##
-pacman -Sy virtualbox
-pacman -S virtualbox-guest-utils 
-pacman -S virtualbox-host-modules-arch
+sudo pacman -Sy virtualbox
+sudo pacman -S virtualbox-guest-utils 
+sudo pacman -S virtualbox-host-modules-arch
 ## Screenshots ##
-pacman -Sy grim
-pacman -Sy swappy
-pacman -Sy slurp
+sudo pacman -Sy grim
+sudo pacman -Sy swappy
+sudo pacman -Sy slurp
 ## Python ##
-pacman -S python-requests
-pacman -S python-beautifulsoup4
+sudo pacman -S python-requests
+sudo pacman -S python-beautifulsoup4
 ## Fira Code Nerd ##
 yay -S ttf-firacode-nerd
 ## swww ##
