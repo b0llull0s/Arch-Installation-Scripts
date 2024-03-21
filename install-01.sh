@@ -1,6 +1,4 @@
 #!/bin/bash
-## Set Dark theme ##
-
 ## Removes unnecesary packages from archinstall ##
 sudo pacman -Rs dolphin
 ## Home directories ##
@@ -91,10 +89,8 @@ yay -S librewolf-bin
 ## nordvpn ##
 yay -S nordvpn-bin
 sudo systemctl enable nordvpnd
-## Github Repos ##
-git clone https://github.com/b0llull0s/7h0seF1L3s
 ## Dot Files ##
-cp -r 7h0seF1L3s/alacritty ~/.config/
+cp -r alacritty ~/.config/
 cp -r 7h0seF1L3s/kitty ~/.config/
 cp -r 7h0seF1L3s/hypr ~/.config/
 cp -r 7h0seF1L3s/waybar ~/.config/waybar
