@@ -1,10 +1,13 @@
+![Screenshot](screenshot.png)
+
 ## Synopsis:
 Simple installation script for Arch Linux with Wayland, Hyperland and Waybar riced with py-wal.
 It also unlocks the Black Arch library and downloads some basic security utils
 
 Planning to add the next features soon:
 - Black Theme
-- Battery icons for the waybar 
+- Battery icons for the waybar
+![Screenshot](screenshot1.png)
 
 ## Details:
 
