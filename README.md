@@ -19,7 +19,7 @@ Planning to add the next features soon:
 | Browser                | Librewolf              |
 | Text Editor            | neovim, Visual Code    |
 
-### Additional Software included:
+### Additional Packages included:
 
 `ufw` , `wireshark` , `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget`   
 
