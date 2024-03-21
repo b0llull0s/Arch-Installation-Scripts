@@ -77,27 +77,35 @@ https://github.com/Tr1sm3gist0/P4n1c-Arch.git
 cd ~/P4nic-Arch
 chmod +x *.sh
 ```
-
-If there something you dont want to install just removed or replace with your preferecences. Other wise just run the first script.
-
+You may want to add your wallpapers to the w4llp4p3rs folder or just change the name and path on the script as you want.
+If you experience problems with py-wal, make sure that all the paths inside the config files match with your system files.
+In case you need to generate a new py-wal template just run:
+```
+wal -i Downloads/w4llp4p3rs/1.jpg
+```
 ## Keybindings
 
 | Key Combination                      | Action                  |
 |--------------------------------------|-------------------------|
 | `Super + Enter`                      | Alacritty               |
-| `Super + F`                          | Firefox                 |
-| `Super + K`                          | Kill Active Window      |
+| `Super + F`                          | Librewolf               |
+| `Super + K`                          | Kill Winndow            |
 | `Super + D`                          | Rofi                    |
-| `Super + R`                          | Ranger                  |
-| `Super + [1-9]`                      | Switch to Workspace     |
-| `Super + [SHIFT] + [1-9]`            | Window to Workingspace  |
-| `Super + [SHIFT] + [arrow key]`      | Resize Window           |
-| `Super + [arrow key]`                | Move to Window          |
+| `Super + E`                          | Nemo                    |
+| `Super + [1-9]`                      | Switch Workspace        |
+| `Super + [SHIFT] + [1-9]`            | Move Window to Workspace|
+| `Super + [SHIFT] + [arrow keys]`     | Resize Window           |
+| `Super + [arrow keys]`               | Move within Windows     |
 | `Super + P`                          | Toggle Split            |
 | `Super + O`                          | Toggle Float            |
-| `Super + S`                          | flameshot               |
+| `Super + printscreen key`            | Screenshot              |
 | `Super + C`                          | VSCode                  |
-| `Super + T`                          | task manager            |
+| `Super + T`                          | Htop                    |
+| `Super + X`                          | code .config            |
+| `Super + Z`                          | code .zshsrc            |
+| `Super + S`                          | Signal                  |
+| `Super + W`                          | Wireshark               |
+
 
 
 
