@@ -20,7 +20,8 @@ Planning to add the next features soon:
 | Text Editor            | neovim, Visual Code    |
 
 ### Additional Software included:
-´ufw´,'wireshark´, 
+
+`ufw`,`wireshark`, `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget`   
 
 ## Installation:
 
