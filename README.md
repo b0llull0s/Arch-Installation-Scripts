@@ -77,7 +77,7 @@ nmcli device wifi connect SSID_or_BSSID password password hidden yes
 And download this repository:
 
 ```
-https://github.com/Tr1sm3gist0/P4n1c-Arch.git
+https://github.com/b0llull0s/P4n1c-Arch.git
 cd ~/P4nic-Arch
 chmod +x *.sh
 ```
