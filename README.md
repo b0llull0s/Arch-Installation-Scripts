@@ -1,16 +1,12 @@
 ## Synopsis:
+Installation script for Arch Linux with Wayland, Hyperland and Waybar riced with py-wal.
+It also unlocks the Black Arch library and downloads some basic security utils
 
-Ready to go Arch system riced with py-wal completly integrated, custom waybar modules with nerdy icons on Hyperland.
-Unlocked Black Arch repo and some basic utils on both configuration and software.
-Custom script to swap wallpapers and the entire color scheme for the new wallpaper.
+Planning to add the next features soon:
+- Black Theme
+- Battery icons for the waybar 
 
-Its divided on three scrips that are pretty straight forward as the archlinux installation script is.
-I will try to improve it gradually as there are more stuff that could be optimized. Some stuff that need to be pointed:
-
-- No battery icons as i don´t use batteries normally 
-- No session manager as Hyperland recommends to login from the TTY
-
-### Details:
+## Details:
 
 | Category               | Software               
 |------------------------|------------------------|
@@ -23,10 +19,8 @@ I will try to improve it gradually as there are more stuff that could be optimiz
 | Browser                | Librewolf              |
 | Text Editor            | neovim, Visual Code    |
 
-### You also may want to check those:
-
-- **Multimedia**: `Gimp`, `mpv`, `vlc`, `shotcut`, 
-- **Security**: `ccrypt`, `GnuPG`, `Kleopatra` 
+### Additional Software included:
+´ufw´,'wireshark´, 
 
 ## Installation:
 
