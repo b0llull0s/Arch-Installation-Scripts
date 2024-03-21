@@ -49,17 +49,28 @@ station wlan0 get-networks
 # Connect to a network
 station wlan0 connect networkname
 ```
-There may be other commands you would like to use prior archinstall in that case just do them now if not just hit that arch install script and fill it as you please. There just a few steps relevant to this build that you need to follow:
-
-- Choose Hyperland as Desktop environment
+There are more advanced ways to install Arch but this is a very simple guide, there are just a few relevant steps that you need to follow for this build:
+- Use `ext4` file type for your system
+- Systemd-bootloader can give you problems with encryptation, in that case just use `GRUB`
+- Choose `Hyperland` as profile
 - Make sure dont choose any session manager as Hyperland recommends to login directly from the TTY.
-
+- Choose NetworkManager
+- I always add the extra libraries
 And wait for the install to finish, once is done reboot your system.
 Now you should need to connect to internet again, this time use networkmanager:
 ```
-system net
+# Check if Networkmanager is running
+sudo systemctl status NetworkManager.service
+sudo systemctl start NetworkManager.service
+# Connect to wifi
+nmcli device wifi list
+nmcli device wifi connect SSID_or_BSSID password password
+# Different interface
+nmcli device wifi connect SSID_or_BSSID password password ifname wlan1 profile_name
+# Hidden network
+nmcli device wifi connect SSID_or_BSSID password password hidden yes
 ```
-and download this repository:
+And download this repository:
 
 ```
 https://github.com/Tr1sm3gist0/P4n1c-Arch.git
@@ -68,17 +79,6 @@ chmod +x *.sh
 ```
 
 If there something you dont want to install just removed or replace with your preferecences. Other wise just run the first script.
-
-The reason is divided on three is because is a good practise to reboot your system after some of those changes.
-
-With the first script you will enable the Black Arh repo and create home directories.
-
-
-And reboot your system, then just use the second script with sudo privileges to install the core of the packages for this build.
-
-Once is done you may like to reboot again otherwise just hit the third script.
-
-It will Download the config files and my wallpaper collection, the build is set it in a way that you only need to add new jpgs to the w4llp4p3rs folder to be able to select then from the script to change the wallpaper
 
 ## Keybindings
 
