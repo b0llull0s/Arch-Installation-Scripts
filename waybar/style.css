@@ -1,0 +1,124 @@
+/* ______________  _________     _______     __________   _____________
+   \\______   \ / |   // ____//___ |  ____ \\__    \\  //   _____//  
+   ||    |__ ///   |  |_ /    \ |   |// ___\\ //  |  \\ \\_____  \\ 
+   ||    |   //    ^   /|  |   \|   |\ \\___ //   |   \\//______\ \\
+   ||    |  / \____  |||___|__/|___| \___//>\\______////_______  // 
+    \\__/        ||__|/     \/           \/         \/         \//                
+                  \  /      /             \         /          /                                                      
+  
+ by Isaac P. Bassart (22-11-2023) 
+----------------------------------------------------- */
+/* Color Source */
+@import "../../.cache/wal/colors-waybar.css";
+/* Basic */
+*{
+    border: none;
+    border-radius: 0;
+    font-family: Cartograph CF Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 15px;
+    min-height: 0;
+}
+/* Bar */
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+}
+/* Workspaces */
+#workspaces button {
+    /*padding: 5px;*/
+    color: @color2;
+    /*margin-right: 5px;*/
+}
+
+#workspaces button.active {
+    color: @color1;
+}
+
+#workspaces button:hover {
+    background: rgba(21, 18, 27, 0);
+    color: @color11;
+    /*border-radius: 10px;*/
+}
+/* Backgrounded Modules */
+#cpu,
+#memory,
+#disk,
+#custom-updates,
+#custom-vpn,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+/* Background */
+#workspaces {
+    background: @color0;
+    border-radius: 10px;
+    margin-left: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/* Modules */
+#custom-vpn {
+    color: @color13;
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 5px;
+}
+
+#custom-updates {
+    color: @color3;
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: 5px;
+}
+
+#clock {
+    color: @color6;
+    border-radius: 10px;
+    margin-left: 5px;
+    border-right: 0px;
+}
+
+#network {
+    border-radius: 10px;
+    color: @color10;
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 5px;
+}
+
+#pulseaudio {
+    color: @color8;
+    border-radius: 10px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-left: 5px;
+}
+
+#battery {
+    color: @color12;
+    border-radius: 10px;
+    margin-right: 10px;
+    border-left: 0px;
+}
+#cpu {
+    color: @color7;
+    border-radius: 10px;
+    margin-right: 5px;
+    border-left: 0px;
+}
+#memory {
+    color: @color9;
+    border-radius: 10px;
+    margin-right: 5px;
+    border-left: 0px;
+}
+#disk {
+    color: @color4;
+    border-radius: 10px;
+    margin-right: 5px;
+    border-left: 0px;
+}
