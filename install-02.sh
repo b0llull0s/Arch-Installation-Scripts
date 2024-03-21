@@ -86,7 +86,7 @@ cp 7h0seF1L3s/.zshrc ~/
 #cp .config/nvim/init.vim ~/.config/nvim/init.vim
 cp -r 7h0seF1L3s/val/templates ~/.config/val/templates
 ## Set pywal ##
-wal -i ~/Downloads/w4llp4p3rs/01.jpg
+wal -i ~/Downloads/w4llp4p3rs/1.jpg
 ## Script Permissions
 cd ~/.config/hyper/scripts
 sudo chmod +x *.sh
