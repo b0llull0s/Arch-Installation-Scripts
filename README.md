@@ -1,5 +1,5 @@
 ## Synopsis:
-Installation script for Arch Linux with Wayland, Hyperland and Waybar riced with py-wal.
+Simple installation script for Arch Linux with Wayland, Hyperland and Waybar riced with py-wal.
 It also unlocks the Black Arch library and downloads some basic security utils
 
 Planning to add the next features soon:
@@ -25,14 +25,18 @@ Planning to add the next features soon:
 
 ## Installation:
 
-Make you sure you have a USB-drive ready to use with an Arch ISO in and just boot it. Remenber that hyperland wont work on virtual machines. 
-You may like to desactivate the root user for security reasons and use sudo to manage privileges. To make sure this happened you can type this command even the archinstall script will give you this option later, just to make sure:
-
+Have in mind that hyperland wont work on virtual machines, so this will only work on bare metal. 
+Make you sure you have a USB-drive ready to use with a verified Arch ISO, you can find how to verified the integrity of your iso on the Arch Docu.
+You can use rufus or dd command in linux:
 ```
-usermod -p '!' root
+# Lookup for your USB drive
+sudo fdisk -l
+# Lookup for the path of your ISO file
+realpath isofile
+# Creates the bootable USB
+sudo dd bs=4M if=/home/shutter/Documents/ISOs/archlinux-2023.10.14-x86_64.iso of=/dev/sdb
 ```
-Connect to internet:
-
+Once you booted the USB and accessed the Arch ISO you may need to connect to your wifi:
 ```
 # Start iwctl
 iwctl
@@ -45,7 +49,6 @@ station wlan0 get-networks
 # Connect to a network
 station wlan0 connect networkname
 ```
-
 There may be other commands you would like to use prior archinstall in that case just do them now if not just hit that arch install script and fill it as you please. There just a few steps relevant to this build that you need to follow:
 
 - Choose Hyperland as Desktop environment
