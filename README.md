@@ -83,7 +83,7 @@ In case you need to generate a new py-wal template just run:
 ```
 wal -i Downloads/w4llp4p3rs/1.jpg
 ```
-## Keybindings
+## Keybindings:
 
 | Key Combination                      | Action                  |
 |--------------------------------------|-------------------------|
