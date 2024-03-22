@@ -104,7 +104,7 @@ wal -i Downloads/w4llp4p3rs/1.jpg
 | `Super + O`                          | Toggle Float            |
 | `Super + printscreen key`            | Screenshot              |
 | `Super + C`                          | VSCode                  |
-| `Super + T`                          | Htop                    |
+| `Super + T`                          | Obsidian                |
 | `Super + X`                          | code .config            |
 | `Super + Z`                          | code .zshsrc            |
 | `Super + S`                          | Signal                  |
