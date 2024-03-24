@@ -25,7 +25,7 @@ Planning to add the next features soon:
 
 ### Additional Packages included:
 
-`ufw` , `wireshark` , `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget`   
+`ufw` , `wireshark` , `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget` , `qflipper`   
 
 ## Installation:
 
