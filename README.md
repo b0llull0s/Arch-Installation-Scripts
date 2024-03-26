@@ -21,6 +21,8 @@ Have in mind that `hyperland` wont work on virtual machines, so this will only w
 | Browser                | Librewolf              |
 | Text Editor            | neovim, Visual Code    |
 
+### Waybar
+
 ### Additional Packages included:
 
 `pacman-contrib` , `yay` , `exa` , `bat` , `ufw` , `wireshark` , `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget` , `curl` , `locate` , `qflipper` , `neofetch` , `python` , `rust` , `cmus`  
