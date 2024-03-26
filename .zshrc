@@ -108,6 +108,7 @@ alias cya='shutdown -h now'
 alias audio='pavucontrol'
 alias up='sudo pacman -Syu'
 alias ls='exa -al'
+alias cat='bat'
 
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
