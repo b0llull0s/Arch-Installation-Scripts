@@ -103,11 +103,11 @@ usermod --shell /usr/bin/zsh username
 | `Super + E`                          | Nemo                    |
 | `Super + [1-9]`                      | Switch Workspace        |
 | `Super + [SHIFT] + [1-9]`            | Move Window to Workspace|
-| `Super + [SHIFT] + [arrow keys]`     | Resize Window           |
-| `Super + [arrow keys]`               | Move within Windows     |
+| `Super + [SHIFT] + [ARROW]`          | Resize Window           |
+| `Super + [ARROW]`                    | Move within Windows     |
 | `Super + P`                          | Toggle Split            |
 | `Super + O`                          | Toggle Float            |
-| `Super + printscreen key`            | Screenshot              |
+| `Super + [PRINTSCRN]`                | Screenshot              |
 | `Super + C`                          | VSCode                  |
 | `Super + T`                          | Obsidian                |
 | `Super + X`                          | code .config            |
