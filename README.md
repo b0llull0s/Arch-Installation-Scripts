@@ -33,7 +33,6 @@ Have in mind that `hyperland` wont work on virtual machines, so this will only w
 
 ## Installation:
 
-
 Make you sure you have a `USB` ready to use with a verified Arch `ISO`, you can find how to verified the integrity of your `ISO` inside the Arch documentation.
 - You can use `rufus` or `dd` command in linux:
 ```bash
@@ -87,6 +86,9 @@ chmod +x *.sh
 ```
 You may want to add your wallpapers to the `w4llp4p3rs` folder or just change the name and path on the script as you want.
 If you experience problems with `py-wal`, make sure that all the paths inside the config files match with your system files.
+
+## Useful commands:
+
 - In case you need to generate a new `py-wal` template just run:
 ```bash
 wal -i Downloads/w4llp4p3rs/1.jpg
@@ -132,6 +134,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 | `Super + S`                          | Signal                  |
 | `Super + W`                          | Wireshark               |
 
+## Credits and appreciations 
 
 
 
