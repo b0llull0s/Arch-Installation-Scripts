@@ -37,6 +37,8 @@ sudo pacman -Sy wget
 sudo pacman -Sy locate
 sudo pacman -Sy neofetch
 sudo pacman -Sy exa
+sudo pacman -Sy bat
+sudo pacman -Sy scrub
 ## Programming & Development ##
 sudo pacman -Sy python-pip
 sudo pacman -Sy cargo
