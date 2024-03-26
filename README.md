@@ -1,5 +1,3 @@
-![Screenshot](screenshot.png)
-
 ## Synopsis:
 Simple installation script for Arch Linux with `wayland`, `hyperland` and `waybar` riced with `py-wal`.
 It also unlocks the Black Arch library and downloads some basic security utils.
@@ -86,6 +84,8 @@ chmod +x *.sh
 ```
 You may want to add your wallpapers to the `w4llp4p3rs` folder or just change the name and path on the script as you want.
 If you experience problems with `py-wal`, make sure that all the paths inside the config files match with your system files.
+
+![Screenshot](screenshot.png)
 
 ## Useful commands:
 
