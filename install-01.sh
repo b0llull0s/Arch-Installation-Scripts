@@ -89,6 +89,7 @@ yay -S librewolf-bin
 ## nordvpn ##
 yay -S nordvpn-bin
 sudo systemctl enable nordvpnd
+sudo systemctl start nordvpnd
 ## Dot Files ##
 cp -r alacritty ~/.config/
 cp -r 7h0seF1L3s/kitty ~/.config/
@@ -108,6 +109,3 @@ cd
 ## OMZSH ##
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo "Finished! Do a sudo reboot."
-sudo systemctl start nordvpnd
-## 7-zip ##
-yay -S 7-zip
