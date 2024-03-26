@@ -21,7 +21,7 @@ Have in mind that `hyperland` wont work on virtual machines, so this will only w
 | Browser                | Librewolf              |
 | Text Editor            | neovim, Visual Code    |
 
-### Waybar
+### Waybar:
 
 ### Additional Packages included:
 
