@@ -87,7 +87,7 @@ If you experience problems with `py-wal`, make sure that all the paths inside th
 
 ![Screenshot](screenshot.png)
 
-## Useful commands:
+## Tips:
 
 - In case you need to generate a new `py-wal` template just run:
 ```bash
