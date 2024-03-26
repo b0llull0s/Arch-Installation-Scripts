@@ -84,13 +84,24 @@ chmod +x *.sh
 ```
 You may want to add your wallpapers to the w4llp4p3rs folder or just change the name and path on the script as you want.
 If you experience problems with py-wal, make sure that all the paths inside the config files match with your system files.
-In case you need to generate a new py-wal template just run:
+- In case you need to generate a new py-wal template just run:
 ```bash
 wal -i Downloads/w4llp4p3rs/1.jpg
 ```
-In case you need to make zsh your default shell:
+- In case you need to make zsh your default shell:
 ```bash
 usermod --shell /usr/bin/zsh username
+```
+- Refresh your system data base
+```bash
+sudo updatedb
+``` 
+- To implement plugings use locate to find the source of the file and add it to your source file:
+```bash
+# use this command:
+locate zsh-autosuggestions
+# Copy the .zsh entry and add it as source in the config file:
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
 
 ## Keybindings:
