@@ -107,6 +107,8 @@ usermod --shell /usr/bin/zsh username
 | `Super + [ARROW]`                    | Move within Windows     |
 | `Super + P`                          | Toggle Split            |
 | `Super + O`                          | Toggle Float            |
+| `Super + I`                          | Swap Horizontal/Verical |
+| `Super + U`                          | Full screen             |
 | `Super + [PRINTSCRN]`                | Screenshot              |
 | `Super + C`                          | VSCode                  |
 | `Super + T`                          | Obsidian                |
