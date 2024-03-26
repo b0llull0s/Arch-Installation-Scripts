@@ -25,14 +25,14 @@ Planning to add the next features soon:
 
 ### Additional Packages included:
 
-`ufw` , `wireshark` , `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget` , `qflipper`   
+`ufw` , `wireshark` , `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget` , `curl` , `locate` , `qflipper` ,  
 
 ## Installation:
 
 Have in mind that hyperland wont work on virtual machines, so this will only work on bare metal. 
 Make you sure you have a USB-drive ready to use with a verified Arch ISO, you can find how to verified the integrity of your iso on the Arch Docu.
 You can use rufus or dd command in linux:
-```
+```bash
 # Lookup for your USB drive
 sudo fdisk -l
 # Lookup for the path of your ISO file
@@ -41,7 +41,7 @@ realpath isofile
 sudo dd bs=4M if=/home/shutter/Documents/ISOs/archlinux-2023.10.14-x86_64.iso of=/dev/sdb
 ```
 Once you booted the USB and accessed the Arch ISO you may need to connect to your wifi:
-```
+```bash
 # Start iwctl
 iwctl
 # list devices
@@ -62,7 +62,7 @@ There are more advanced ways to install Arch but this is a very simple guide, th
 - I always add the extra libraries
 And wait for the install to finish, once is done reboot your system.
 Now you should need to connect to internet again, this time use networkmanager:
-```
+```bash
 # Check if Networkmanager is running
 sudo systemctl status NetworkManager.service
 sudo systemctl start NetworkManager.service
@@ -76,7 +76,7 @@ nmcli device wifi connect SSID_or_BSSID password password hidden yes
 ```
 And download this repository:
 
-```
+```bash
 https://github.com/b0llull0s/P4n1c-Arch.git
 cd ~/P4nic-Arch
 chmod +x *.sh
@@ -84,9 +84,14 @@ chmod +x *.sh
 You may want to add your wallpapers to the w4llp4p3rs folder or just change the name and path on the script as you want.
 If you experience problems with py-wal, make sure that all the paths inside the config files match with your system files.
 In case you need to generate a new py-wal template just run:
-```
+```bash
 wal -i Downloads/w4llp4p3rs/1.jpg
 ```
+In case you need to make zsh your default shell:
+```bash
+usermod --shell /usr/bin/zsh username
+```
+
 ## Keybindings:
 
 | Key Combination                      | Action                  |
