@@ -96,7 +96,7 @@ usermod --shell /usr/bin/zsh username
 ```bash
 sudo updatedb
 ``` 
-- To implement plugings use locate to find the source of the file and add it to your source file:
+- To implement plugings use locate to find the path of the plugin file and add it to your source file:
 ```bash
 # use this command:
 locate zsh-autosuggestions
