@@ -91,6 +91,8 @@ yay -S librewolf-bin
 yay -S nordvpn-bin
 sudo systemctl enable nordvpnd
 sudo systemctl start nordvpnd
+## zsh plugins ##
+yay -S zsh-syntax-highlighting zsh-autosuggestions
 ## Dot Files ##
 cp -r alacritty ~/.config/
 cp -r 7h0seF1L3s/kitty ~/.config/
