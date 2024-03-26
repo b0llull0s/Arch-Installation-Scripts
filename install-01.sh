@@ -38,7 +38,6 @@ sudo pacman -Sy locate
 sudo pacman -Sy neofetch
 sudo pacman -Sy exa
 sudo pacman -Sy bat
-sudo pacman -Sy scrub
 ## Programming & Development ##
 sudo pacman -Sy python-pip
 sudo pacman -Sy cargo
@@ -93,6 +92,8 @@ yay -S librewolf-bin
 yay -S nordvpn-bin
 sudo systemctl enable nordvpnd
 sudo systemctl start nordvpnd
+## scrub ##
+yay -S scrub
 ## zsh plugins ##
 yay -S zsh-syntax-highlighting zsh-autosuggestions
 ## Dot Files ##
