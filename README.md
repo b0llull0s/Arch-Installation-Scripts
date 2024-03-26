@@ -13,8 +13,8 @@ Have in mind that `hyperland` wont work on virtual machines, so this will only w
 | Category               | Software               
 |------------------------|------------------------|
 | Window Manager         | Hyprland               |
-| Terminal Manager       | Alacritty,kitty        |
-| File Manager           | Ranger,Nemo            |
+| Terminal Manager       | Alacritty, kitty       |
+| File Manager           | Ranger, Nemo           |
 | Status Bar             | Waybar                 |
 | Launcher               | Rofi                   |
 | Shell                  | Zsh                    |
