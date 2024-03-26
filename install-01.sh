@@ -34,6 +34,7 @@ sudo systemctl enable paccache.timer
 ## Binaries ##
 sudo pacman -Sy curl
 sudo pacman -Sy wget
+sudo pacman -Sy locate
 sudo pacman -Sy neofetch
 sudo pacman -Sy exa
 ## Programming & Development ##
