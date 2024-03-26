@@ -98,7 +98,7 @@ usermod --shell /usr/bin/zsh username
 |--------------------------------------|-------------------------|
 | `Super + Enter`                      | Alacritty               |
 | `Super + F`                          | Librewolf               |
-| `Super + K`                          | Kill Winndow            |
+| `Super + K`                          | Kill Window            |
 | `Super + D`                          | Rofi                    |
 | `Super + E`                          | Nemo                    |
 | `Super + [1-9]`                      | Switch Workspace        |
