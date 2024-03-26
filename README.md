@@ -1,13 +1,12 @@
 ![Screenshot](screenshot.png)
 
 ## Synopsis:
-Simple installation script for Arch Linux with Wayland, Hyperland and Waybar riced with py-wal.
+Simple installation script for Arch Linux with `wayland`, `hyperland` and `waybar` riced with `py-wal`.
 It also unlocks the Black Arch library and downloads some basic security utils.
-Have in mind that hyperland wont work on virtual machines, so this will only work on bare metal. 
+Have in mind that `hyperland` wont work on virtual machines, so this will only work on bare metal. 
 
 - Planning to add the next features soon:
-  - Black Theme
-  - Battery icons for the waybar
+  - Thinkpad experience 
 
 ![Screenshot](screenshot1.png)
 
@@ -28,11 +27,15 @@ Have in mind that hyperland wont work on virtual machines, so this will only wor
 
 `ufw` , `wireshark` , `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget` , `curl` , `locate` , `qflipper` ,  
 
+### Zsh Plugings, Aliases and Functions:
+
+### Custom Scripts:
+
 ## Installation:
 
 
-Make you sure you have a USB-drive ready to use with a verified Arch ISO, you can find how to verified the integrity of your iso on the Arch Docu.
-- You can use rufus or dd command in linux:
+Make you sure you have a `USB` ready to use with a verified Arch `ISO`, you can find how to verified the integrity of your `ISO` inside the Arch documentation.
+- You can use `rufus` or `dd` command in linux:
 ```bash
 # Lookup for your USB drive
 sudo fdisk -l
@@ -41,7 +44,7 @@ realpath isofile
 # Creates the bootable USB
 sudo dd bs=4M if=/home/shutter/Documents/ISOs/archlinux-2023.10.14-x86_64.iso of=/dev/sdb
 ```
-- Once you booted the USB and accessed the Arch ISO you may need to connect to your wifi:
+- Once you booted the `USB` and accessed the Arch `ISO` you may need to connect to your `wifi`:
 ```bash
 # Start iwctl
 iwctl
@@ -56,13 +59,13 @@ station wlan0 connect networkname
 ```
 - There are more advanced ways to install Arch but this is a very simple guide, there are just a few relevant steps that you need to follow for this build:
   - Use `ext4` file type for your system
-  - Systemd-bootloader can give you problems with encryptation, in that case just use `GRUB`
+  - `Systemd-bootloader` can give you problems with encryptation, in that case just use `GRUB`
   - Choose `Hyperland` as profile
-  - Make sure dont choose any session manager as Hyperland recommends to login directly from the TTY.
-  - Choose NetworkManager
+  - Make sure dont choose any session manager as `Hyperland` recommends to login directly from the `TTY`.
+  - Choose `NetworkManager`
   - I always add the extra libraries
 - Wait for the install to finish, once is done reboot your system.
-- Now you should need to connect to internet again, this time use networkmanager:
+- Now you should need to connect to internet again, this time use `NetworkManager`:
 ```bash
 # Check if Networkmanager is running
 sudo systemctl status NetworkManager.service
@@ -82,9 +85,9 @@ https://github.com/b0llull0s/P4n1c-Arch.git
 cd ~/P4nic-Arch
 chmod +x *.sh
 ```
-You may want to add your wallpapers to the w4llp4p3rs folder or just change the name and path on the script as you want.
-If you experience problems with py-wal, make sure that all the paths inside the config files match with your system files.
-- In case you need to generate a new py-wal template just run:
+You may want to add your wallpapers to the `w4llp4p3rs` folder or just change the name and path on the script as you want.
+If you experience problems with `py-wal`, make sure that all the paths inside the config files match with your system files.
+- In case you need to generate a new `py-wal` template just run:
 ```bash
 wal -i Downloads/w4llp4p3rs/1.jpg
 ```
