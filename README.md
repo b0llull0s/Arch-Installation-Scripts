@@ -52,7 +52,10 @@ Have in mind that `hyperland` wont work on virtual machines, so this will only w
 - Theme Change
 - Screenshot and edition. 
 
-### Wireshark Profiles.
+### Cybersecurity features:
+
+- Black Arch libraries
+- Wireshark profiles
 
 ## Installation:
 
