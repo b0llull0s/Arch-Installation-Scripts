@@ -175,5 +175,4 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 - Credit to **_Alan Moore_** and **_Dave Gibbons_** for `image1` and The band **_Sleep_** for `image2`.
 - Wallpaper by **_Wenqing Yan_**. ;) 
 
-
-
+![Screenshot](image3.png)
