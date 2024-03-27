@@ -25,7 +25,7 @@ Have in mind that `hyperland` wont work on virtual machines, so this will only w
 
 ### Additional Packages included:
 
-`pacman-contrib` , `yay` , `exa` , `bat` , `ufw` , `wireshark` , `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget` , `curl` , `locate` , `qflipper` , `neofetch` , `python` , `rust` , `cmus` , `scrub` 
+`pacman-contrib` , `yay` , `exa` , `bat` , `ufw` , `wireshark` , `bleachbit` , `virtualbox` , `burp` , `obsidian` , `nordvpn` , `signal`, `btop` , `wget` , `curl` , `locate` , `qflipper` , `neofetch` , `python` , `rust` , `pamixer` `cmus` , `scrub`.
 
 ### Zsh Plugings, Aliases and Functions:
 
