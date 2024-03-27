@@ -5,8 +5,8 @@ It also unlocks the Black Arch library and downloads some basic security utils.
 Have in mind that `hyperland` wont work on virtual machines, so this will only work on bare metal. 
 
 - Planning to add the next features soon:
-  - Ranger and kitty integration
-  - Waybar batteries module
+  - `Ranger` and `kitty` integration
+  - `Waybar` batteries module
   - Thinkpad experience 
   - Find the right music player
     
@@ -48,8 +48,11 @@ Have in mind that `hyperland` wont work on virtual machines, so this will only w
 
 ### Custom Scripts:
 
-- Waybar reset and change the entire theme.
+- Waybar reset for troubleshooting.
+- Theme Change
 - Screenshot and edition. 
+
+### Wireshark Profiles.
 
 ## Installation:
 
@@ -162,9 +165,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ## Credits and appreciations 
 
-- Credit to Stephan Raabe for the base idea behind the custom scripts and all the `pywal` integration without his youtube channel would have been way harder.
+- Credit to ==Stephan Raabe== for the base idea behind the custom scripts and all the `pywal` integration without his youtube channel would have been way harder.
 - Credit to s4vitar for the `rmk` function.
 - Credit to the annonymous user who posted the `waybar` custom module to see your public ip.
+- Credit to @PenAce for the `wireshark` profiles taken from his awesome video.
 - Credit to Alan Moore and Dave Gibbons for `image1` and The band Sleep for `image2`.
 - Wallpaper by Wenqing Yan. ;) 
 
