@@ -1,11 +1,15 @@
 ## Synopsis:
+
 Simple installation script for Arch Linux with `wayland`, `hyperland` and `waybar` riced with `py-wal`.
 It also unlocks the Black Arch library and downloads some basic security utils.
 Have in mind that `hyperland` wont work on virtual machines, so this will only work on bare metal. 
 
 - Planning to add the next features soon:
+  - Ranger and kitty integration
+  - Waybar batteries module
   - Thinkpad experience 
-
+  - Find the right music player
+    
 ![Screenshot](screenshot1.png)
 
 ## Details:
@@ -23,13 +27,28 @@ Have in mind that `hyperland` wont work on virtual machines, so this will only w
 
 ### Waybar:
 
+- Two custom modules that show you your public ip and how many updates are available.
+- Fully customized style with `pywal` integration and nerdfont icons.
+- Audio module changes the key in base to the situation.
+- Network module opens the `Network.Manager GUI`.
+  
 ### Additional Packages included:
 
-`pacman-contrib`  `yay`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `burp`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `pamixer`  `cmus`  `scrub`.
+`pacman-contrib`  `yay`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `burp`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `pamixer`  `cmus`  `scrub`
 
 ### Zsh Plugings, Aliases and Functions:
 
+- `Ohmyzsh` and `pywal` integration.
+- Some handy aliases to use `systemctl` and your system in general.
+- `Git` pluging and most useful aliases.
+- `Cheat.sh` implemented on a function to use as `cheat <argument>`.
+- Safe deletion of files using `scrup` and `schred` on a funtion to use as `rmk <argument>`.
+- Some `zsh` plugins.
+
 ### Custom Scripts:
+
+- Waybar reset and change the entire theme.
+- Screenshot and edition. 
 
 ## Installation:
 
@@ -56,15 +75,16 @@ station wlan0 get-networks
 # Connect to a network
 station wlan0 connect networkname
 ```
-- There are more advanced ways to install Arch but this is a very simple guide, there are just a few relevant steps that you need to follow for this build:
+- Just run the `archinstall` script. This are the only relevant steps that you need to follow for this build:
   - Use `ext4` file type for your system
   - `Systemd-bootloader` can give you problems with encryptation, in that case just use `GRUB`
   - Choose `Hyperland` as profile
   - Make sure dont choose any session manager as `Hyperland` recommends to login directly from the `TTY`.
   - Choose `NetworkManager`
   - I always add the extra libraries
-- Wait for the install to finish, once is done reboot your system.
-- Now you should need to connect to internet again, this time use `NetworkManager`:
+  - Once is done reboot your system.
+- Now you should need to connect to the internet, this time use `NetworkManager` from your system:
+  
 ```bash
 # Check if Networkmanager is running
 sudo systemctl status NetworkManager.service
@@ -78,7 +98,6 @@ nmcli device wifi connect SSID_or_BSSID password password ifname wlan1 profile_n
 nmcli device wifi connect SSID_or_BSSID password password hidden yes
 ```
 - And download this repository:
-
 ```bash
 https://github.com/b0llull0s/P4n1c-Arch.git
 cd ~/P4nic-Arch
@@ -117,7 +136,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 |--------------------------------------|-------------------------|
 | `Super + Enter`                      | Alacritty               |
 | `Super + F`                          | Librewolf               |
-| `Super + K`                          | Kill Window            |
+| `Super + K`                          | Kill Window             |
 | `Super + D`                          | Rofi                    |
 | `Super + E`                          | Nemo                    |
 | `Super + [1-9]`                      | Switch Workspace        |
@@ -135,10 +154,18 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 | `Super + Z`                          | code .zshsrc            |
 | `Super + S`                          | Signal                  |
 | `Super + W`                          | Wireshark               |
+| `Super + B`                          | Reset waybar            |
+| `Super + N`                          | Changes theme           |
+| `Super + Q`                          | Volume Up               |
+| `Super + A`                          | Volume Down             |
 
 ## Credits and appreciations 
 
-
+- Credit to Stephan Raabe for the base idea behind the custom scripts and all the `pywal` integration without his youtube channel would have been way harder.
+- Credit to s4vitar for the `rmk` function.
+- Credit to the annonymous user who posted the `waybar` custom module to see your public ip.
+- Credit to Alan Moore and Dave Gibbons for `image1` and The band Sleep for `image2`.
+- Wallpaper by Wenqing Yan. ;) 
 
 
 
