@@ -165,7 +165,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ## Credits and appreciations 
 
-- Credit to ==Stephan Raabe== for the base idea behind the custom scripts and all the `pywal` integration without his youtube channel would have been way harder.
+- Credit to Stephan Raabe for the base idea behind the custom scripts and all the `pywal` integration without his youtube channel would have been way harder.
 - Credit to s4vitar for the `rmk` function.
 - Credit to the annonymous user who posted the `waybar` custom module to see your public ip.
 - Credit to @PenAce for the `wireshark` profiles taken from his awesome video.
