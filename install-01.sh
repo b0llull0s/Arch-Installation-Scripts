@@ -3,7 +3,7 @@
 sudo pacman -Rs dolphin
 ## Home directories ##
 cd ..
-mkdir Downloads Screenshots VS-Workspaces
+mkdir Downloads Screenshots 
 cd P4n1c-Arch
 mv w4llp4p3rs ~/Downloads/
 cd ~/Downloads/
@@ -21,8 +21,11 @@ sudo pacman -Sy ufw
 sudo ufw enable
 sudo ufw status verbose
 sudo systemctl enable ufw.service
-## Git ##
-sudo pacman -Sy git 
+## Nerdfonts ##
+#git clone https://github.com/ryanoasis/nerd-fonts.git
+#cd nerd-fonts
+#chmod +x install.sh
+#./install.sh
 ## Yay ##
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
