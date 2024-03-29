@@ -115,6 +115,8 @@ alias gc="git commit -m $1"
 alias gpo='git push -u origin main'
 alias gp='git push .'
 alias gpl='git pull'
+alias ps!='ps -auxwf'
+
 
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
