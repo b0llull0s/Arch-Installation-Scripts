@@ -116,7 +116,7 @@ alias gpo='git push -u origin main'
 alias gp='git push .'
 alias gpl='git pull'
 alias ps!='ps -auxwf'
-
+alias newmirrors='rankmirrors -n 6 /etc/pacman.d/mirrorlist'
 
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
