@@ -66,7 +66,7 @@ Make you sure you have a `USB` ready to use with a verified Arch `ISO`, you can 
 sudo fdisk -l
 # Lookup for the path of your ISO file
 realpath isofile
-# Creates the bootable USB
+# Create the bootable USB
 sudo dd bs=4M if=/home/shutter/Documents/ISOs/archlinux-2023.10.14-x86_64.iso of=/dev/sdb
 ```
 - Once you booted the `USB` and accessed the Arch `ISO` you may need to connect to your `wifi`:
