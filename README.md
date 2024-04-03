@@ -90,8 +90,15 @@ station wlan0 connect networkname
   - Choose `NetworkManager`
   - I always add the extra libraries
   - Once is done reboot your system.
-- Now you should need to connect to the internet, this time use `NetworkManager` from your system:
   
+- Edit pacman.conf:
+```bash
+nano /etc/pacman.conf
+# Uncoment Color
+# Set ParallelDownloads = 5
+# Add "ILoveCandy"
+```
+- Now you should need to connect to the internet, this time use `NetworkManager` from your system:
 ```bash
 # Check if Networkmanager is running
 sudo systemctl status NetworkManager.service
