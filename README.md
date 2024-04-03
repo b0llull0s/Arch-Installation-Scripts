@@ -142,6 +142,7 @@ locate zsh-autosuggestions
 # Copy the .zsh entry and add it as source in the config file:
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
+- Nowdays with Steam using proton you dont need to install the graphical drivers yourself, the correct drivers for your system will be install when you install proton from Steam.
 
 ## Keybindings:
 
