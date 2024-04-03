@@ -86,7 +86,7 @@ station wlan0 connect networkname
   - `Systemd-bootloader` can give you problems with encryptation, in that case just use `GRUB`.
   - Choose `Hyperland` as profile.
   - Choose `NetworkManager`.
-  - Extra libraries for 32 bits support.
+  - Extra libraries for `32bit` support.
   - Once is done reboot your system.
   
 - Edit `pacman.conf`:
