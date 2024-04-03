@@ -27,8 +27,11 @@ cd yay-git
 makepkg -si
 cd ..
 ## PacCache ##
-sudo pacman -Sy pacman-contrib
 sudo systemctl enable paccache.timer
+## Mirrors ##
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+sudo pacman -Sy pacman-contrib
+rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 ## Binaries ##
 sudo pacman -Sy curl
 sudo pacman -Sy wget
@@ -39,6 +42,9 @@ sudo pacman -Sy bat
 ## Programming & Development ##
 sudo pacman -Sy python-pip
 sudo pacman -Sy cargo
+sudo pacman -Sy jre-openjdk
+sudo pacman -Sy jdk-openjdk
+sudo pacman -Sy go
 # Terminals & Shells ##
 sudo pacman -Sy zsh
 sudo pacman -Sy alacritty
