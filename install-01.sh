@@ -96,14 +96,17 @@ yay -S scrub
 yay -S zsh-syntax-highlighting zsh-autosuggestions
 ## Dot Files ##
 cp -r alacritty ~/.config/
-cp -r 7h0seF1L3s/kitty ~/.config/
-cp -r 7h0seF1L3s/hypr ~/.config/
-cp -r 7h0seF1L3s/waybar ~/.config/waybar
-cp -r 7h0seF1L3s/rofi ~/.config/rofi
-cp -r 7h0seF1L3s/swappy ~/.config/swappy
+cp -r btop ~/.config/
+cp -r gtk-3.0 ~/.config/
+cp -r gtk-4.0 ~/.config/
+cp -r hypr ~/.config/
+cp -r kitty ~/.config/
+cp -r rofi ~/.config/
+cp -r swappy ~/.config/
+cp -r 7h0seF1L3s/wal/templates ~/.config/wal/templates
+cp -r waybar ~/.config/
+cp -r wireshark/profiles ~/.config/wireshark/profiles
 cp 7h0seF1L3s/.zshrc ~/
-#cp .config/nvim/init.vim ~/.config/nvim/init.vim
-cp -r 7h0seF1L3s/val/templates ~/.config/val/templates
 ## Set pywal ##
 wal -i ~/Downloads/w4llp4p3rs/1.jpg
 ## Script Permissions
