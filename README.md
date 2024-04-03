@@ -89,7 +89,7 @@ station wlan0 connect networkname
   - Extra libraries for 32 bits support.
   - Once is done reboot your system.
   
-- Edit pacman.conf:
+- Edit `pacman.conf`:
 ```bash
 nano /etc/pacman.conf
 # Uncoment Color
@@ -117,7 +117,7 @@ chmod +x *.sh
 ```
 - You may want to add your wallpapers to the `w4llp4p3rs` folder or just change the name and path on the script as you want.
 If you experience problems with `py-wal`, make sure that all the paths inside the config files match with your system files.
-- You may also want to create a new directory with your desired profile name on Wireshark/profile and move the files inside.
+- You may also want to create a new directory with your desired profile name on `Wireshark/profile` and move the files inside.
 
 ![Screenshot](screenshot.png)
 
@@ -142,7 +142,7 @@ locate zsh-autosuggestions
 # Copy the .zsh entry and add it as source in the config file:
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
-- Nowdays with Steam using proton you dont need to install the graphical drivers yourself, the correct drivers for your system will be install when installing proton from Steam.
+- Nowdays with `Steam` using `proton` you dont need to install the `graphical drivers` yourself, the correct drivers for your system will be install when installing `proton` from `Steam`.
 
 ## Keybindings:
 
