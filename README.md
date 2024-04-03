@@ -82,11 +82,11 @@ station wlan0 get-networks
 station wlan0 connect networkname
 ```
 - Just run the `archinstall` script. This are the only relevant steps that you need to follow for this build:
-  - Use `ext4` file type for your system
-  - `Systemd-bootloader` can give you problems with encryptation, in that case just use `GRUB`
-  - Choose `Hyperland` as profile
-  - Choose `NetworkManager`
-  - I always add the extra libraries
+  - Use `ext4` file type for your system.
+  - `Systemd-bootloader` can give you problems with encryptation, in that case just use `GRUB`.
+  - Choose `Hyperland` as profile.
+  - Choose `NetworkManager`.
+  - Extra libraries for 32 bits support.
   - Once is done reboot your system.
   
 - Edit pacman.conf:
