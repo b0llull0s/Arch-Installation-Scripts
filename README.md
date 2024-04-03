@@ -30,7 +30,6 @@
 - Custom module to see how many updates are available.
 - Custom module to check and show your public ip.
 - Fully customized style with `pywal` integration and nerdfont icons.
-- Audio module changes the key in base to the situation.
 - Network module opens the `Network.Manager GUI`.
   
 ### Additional Packages included:
