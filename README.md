@@ -85,7 +85,6 @@ station wlan0 connect networkname
   - Use `ext4` file type for your system
   - `Systemd-bootloader` can give you problems with encryptation, in that case just use `GRUB`
   - Choose `Hyperland` as profile
-  - Make sure dont choose any session manager as `Hyperland` recommends to login directly from the `TTY`.
   - Choose `NetworkManager`
   - I always add the extra libraries
   - Once is done reboot your system.
