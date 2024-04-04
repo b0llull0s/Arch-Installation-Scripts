@@ -1,124 +1,143 @@
 #!/bin/bash
-## Removes unnecesary packages from archinstall ##
-sudo pacman -Rs dolphin
-## Home directories ##
-cd ..
-mkdir Downloads Screenshots 
-cd P4n1c-Arch
-mv w4llp4p3rs ~/Downloads/
-cd ~/Downloads/
-## Enable Black Arch repo
-curl -O https://blackarch.org/strap.sh
-chmod +x strap.sh
-sudo ./strap.sh
-## Firewall ##
-sudo pacman -Sy ufw
-sudo ufw enable
-sudo ufw status verbose
-sudo systemctl enable ufw.service
+set -e
+
+# Functions
+
+error_exit() {
+    echo "$1" 1>&2
+    exit 1
+}
+
+install_packages() {
+    for package in "$@"; do
+        if ! pacman -Q "$package" &>/dev/null; then
+            sudo pacman -Sy --noconfirm "$package" || error_exit "Failed to install $package"
+        fi
+    done
+}
+
+enable_services() {
+    for service in "$@"; do
+        sudo systemctl enable --now "$service" || error_exit "Failed to enable $service"
+    done
+}
+
+# Remove unnecessary packages
+sudo pacman -Rs --noconfirm dolphin || error_exit "Failed to remove dolphin"
+
+# Home directories setup
+mkdir -p ~/Downloads ~/Screenshots || error_exit "Failed to create directories"
+
+# Enable Black Arch repo
+curl -fsSL https://blackarch.org/strap.sh | sudo bash || error_exit "Failed to enable Black Arch repo"
+
+# Firewall setup
+install_packages ufw
+sudo ufw enable || error_exit "Failed to enable UFW"
+sudo ufw status verbose || error_exit "Failed to get UFW status"
+enable_services ufw.service
+
 ## Nerdfonts ##
 #git clone https://github.com/ryanoasis/nerd-fonts.git
 #cd nerd-fonts
 #chmod +x install.sh
 #./install.sh
-## Yay ##
+
+# Yay setup
+install_packages base-devel git
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
-makepkg -si
+makepkg -si || error_exit "Failed to install yay"
 cd ..
-## PacCache ##
-sudo systemctl enable paccache.timer
-## Mirrors ##
-cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
-sudo pacman -Sy pacman-contrib
-rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
-## Binaries ##
-sudo pacman -Sy curl
-sudo pacman -Sy wget
-sudo pacman -Sy locate
-sudo pacman -Sy neofetch
-sudo pacman -Sy exa
-sudo pacman -Sy bat
-## Programming & Development ##
-sudo pacman -Sy python-pip
-sudo pacman -Sy cargo
-sudo pacman -Sy jre-openjdk
-sudo pacman -Sy jdk-openjdk
-sudo pacman -Sy go
-# Terminals & Shells ##
-sudo pacman -Sy zsh
-sudo pacman -Sy alacritty
-## Sound ##
-sudo pacman -Sy cmus
-sudo pacman -Sy pamixer
-sudo pacman -Sy pavucontrol
-## Bluetooth ##
-sudo pacman -Sy blueman bluez bluez-utils
-## Launcher ##
-sudo pacman -Sy rofi
-## File Managers ##
-sudo pacman -Sy ranger
-sudo pacman -Sy nemo
-## Task Manager ##
-sudo pacman -Sy btop
-## Code Editors ##
-sudo pacman -Sy neovim
-sudo pacman -Sy code
-## Utils ##
-sudo pacman -Sy waybar
-sudo pacman -Sy python-pywal
-sudo pacman -Sy obsidian
-sudo pacman -Sy signal-desktop
-sudo pacman -Sy bleachbit
-sudo pacman -Sy cliphist
-## Wireshark ##
-sudo pacman -Sy wireshark-qt
-sudo chmod +x /usr/bin/dumpcap
-## Virtual Box ##
-sudo pacman -Sy virtualbox
-sudo pacman -S virtualbox-guest-utils 
-sudo pacman -S virtualbox-host-modules-arch
-## Screenshots ##
-sudo pacman -Sy grim
-sudo pacman -Sy swappy
-sudo pacman -Sy slurp
-## Python ##
-sudo pacman -S python-requests
-sudo pacman -S python-beautifulsoup4
-## Fira Code Nerd ##
-yay -S ttf-firacode-nerd
-## swww ##
-yay -S swww
-sudo swww init
-## librewolf ##
-yay -S librewolf-bin
-## nordvpn ##
-yay -S nordvpn-bin
-sudo systemctl enable nordvpnd
-sudo systemctl start nordvpnd
-## scrub ##
-yay -S scrub
-## zsh plugins ##
-yay -S zsh-syntax-highlighting zsh-autosuggestions
-## Dot Files ##
-cp -r alacritty ~/.config/
-cp -r btop ~/.config/
-cp -r gtk-3.0 ~/.config/
-cp -r gtk-4.0 ~/.config/
-cp -r hypr ~/.config/
-cp -r kitty ~/.config/
-cp -r rofi ~/.config/
-cp -r swappy ~/.config/
-cp -r wal/templates ~/.config/wal/templates
-cp -r waybar ~/.config/
-cp -r wireshark/profiles ~/.config/wireshark/profiles
-cp .zshrc ~/
-## Set pywal ##
-wal -i ~/Downloads/w4llp4p3rs/1.jpg
-## Script Permissions
-cd ~/.config/hyper/scripts
-sudo chmod +x *.sh
-cd
-## OMZSH ##
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-echo "Finished! Do a sudo reboot."
+
+# PacCache setup
+sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
+
+# Mirrors setup
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup || error_exit "Failed to backup mirrorlist"
+sudo pacman -Sy --noconfirm pacman-contrib || error_exit "Failed to install pacman-contrib"
+sudo rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist || error_exit "Failed to rank mirrors"
+
+# packages grouped by category
+
+# Binaries
+install_packages curl wget locate neofetch exa bat
+
+# Programming & Development
+install_packages python-pip cargo jre-openjdk jdk-openjdk go
+
+# Terminals & Shells
+install_packages zsh alacritty
+
+# Sound
+install_packages cmus pamixer pavucontrol
+
+# Bluetooth
+install_packages blueman bluez bluez-utils
+
+# Launcher
+install_packages rofi
+
+# File Managers
+install_packages ranger nemo
+
+# Task Manager
+install_packages btop
+
+# Code Editors
+install_packages neovim code
+
+# Utils
+install_packages waybar python-pywal obsidian signal-desktop bleachbit cliphist
+
+# Wireshark
+install_packages wireshark-qt
+sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for dumpcap"
+
+# Virtual Box
+install_packages virtualbox virtualbox-guest-utils virtualbox-host-modules-arch
+
+# Screenshots
+install_packages grim swappy slurp
+
+# Python
+install_packages python-requests python-beautifulsoup4
+
+# Fira Code Nerd
+yay -S --noconfirm ttf-firacode-nerd || error_exit "Failed to install Fira Code Nerd"
+
+# swww
+yay -S --noconfirm swww || error_exit "Failed to install swww"
+sudo swww init || error_exit "Failed to initialize swww"
+
+# librewolf
+yay -S --noconfirm librewolf-bin || error_exit "Failed to install librewolf-bin"
+
+# nordvpn
+yay -S --noconfirm nordvpn-bin || error_exit "Failed to install nordvpn-bin"
+sudo systemctl enable --now nordvpnd || error_exit "Failed to enable nordvpnd"
+
+# scrub
+yay -S --noconfirm scrub || error_exit "Failed to install scrub"
+
+# zsh plugins
+yay -S --noconfirm zsh-syntax-highlighting zsh-autosuggestions || error_exit "Failed to install zsh plugins"
+
+# Dot Files
+for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr kitty rofi swappy waybar wireshark; do
+    cp -r "$config_dir" ~/.config/ || error_exit "Failed to copy $config_dir"
+done
+cp -r wal/templates ~/.config/wal/templates || error_exit "Failed to copy wal/templates"
+cp .zshrc ~/ || error_exit "Failed to copy .zshrc"
+
+# Set pywal
+wal -i ~/Downloads/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
+
+# Script Permissions
+sudo chmod +x ~/.config/hyper/scripts/*.sh || error_exit "Failed to change script permissions"
+
+# OMZSH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || error_exit "Failed to install oh-my-zsh"
+
+echo "Finished! Please reboot."
+
