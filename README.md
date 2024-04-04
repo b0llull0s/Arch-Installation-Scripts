@@ -1,6 +1,6 @@
 ## Synopsis:
 
-- Simple installation script for Arch Linux with `wayland`, `hyperland` and `waybar` riced with `py-wal`.
+- Simple installation script for Arch Linux with `wayland`, `hyperland` and `waybar` riced with `py-wal`
 - It also unlocks the Black Arch library and downloads some basic security utils.
 - Have in mind that `hyperland` wont work on virtual machines, so this installation will only work on bare metal.
 - Uses dark theme.
