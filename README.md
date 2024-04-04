@@ -1,14 +1,14 @@
 ## Synopsis:
 
-- Simple installation script for Arch Linux with `wayland`, `hyperland` and `waybar` riced with `py-wal`
-- It also unlocks the Black Arch library and downloads some basic security utils
-- Have in mind that `hyperland` wont work on virtual machines, so this installation will only work on bare metal
-- Uses dark theme
+- Simple installation script for Arch Linux with `wayland`, `hyperland` and `waybar` riced with `py-wal`.
+- It also unlocks the Black Arch library and downloads some basic security utils.
+- Have in mind that `hyperland` wont work on virtual machines, so this installation will only work on bare metal.
+- Uses dark theme.
   
 ### Planning to add the next features soon:
 
-  - `Ranger` and `kitty` integration
-  - `Waybar` batteries module
+  - `Ranger` and `kitty` integration.
+  - `Waybar` batteries module.
     
 ![Screenshot](screenshot1.png)
 
@@ -27,10 +27,10 @@
 
 ### Waybar:
 
-- Custom module to see how many updates are available
-- Custom module to check and show your public ip
-- Fully customized style with `pywal` integration and nerdfont icons
-- Network module opens the `Network.Manager GUI`
+- Custom module to see how many updates are available.
+- Custom module to check and show your public ip.
+- Fully customized style with `pywal` integration and nerdfont icons.
+- Network module opens the `Network.Manager GUI`.
   
 ### Additional Packages included:
 
@@ -38,23 +38,23 @@
 
 ### Zsh Plugings, Aliases and Functions:
 
-- `Ohmyzsh` and `pywal` integration
-- Some handy aliases to use `systemctl` and your system in general
-- `Git` pluging and most useful aliases
+- `Ohmyzsh` and `pywal` integration.
+- Some handy aliases to use `systemctl` and your system in general.
+- `Git` pluging and most useful aliases.
 - `Cheat.sh` implemented on a function to use as `cheat <argument>`
 - Safe deletion of files using `scrup` and `schred` on a funtion to use as `rmk <argument>`
-- Some `zsh` plugins
+- Some `zsh` plugins.
 
 ### Custom Scripts:
 
-- Waybar reset for troubleshooting
-- Theme Change
-- Screenshot and edition 
+- Waybar reset for troubleshooting.
+- Theme Change.
+- Screenshot and edition.
 
 ### Cybersecurity features:
 
-- Black Arch libraries
-- Wireshark profiles
+- Black Arch libraries.
+- Wireshark profiles.
 
 ## Installation:
 
@@ -68,7 +68,7 @@ realpath isofile
 # Create the bootable USB
 sudo dd bs=4M if=/home/shutter/Documents/ISOs/archlinux-2023.10.14-x86_64.iso of=/dev/sdb
 ```
-- Once you booted the `USB` and accessed the Arch `ISO` you may need to connect to your `wifi`:
+- Once you booted the `USB` and accessed the Arch `ISO` you may need to connect to your `wifi`
 ```bash
 # Start iwctl
 iwctl
@@ -82,14 +82,14 @@ station wlan0 get-networks
 station wlan0 connect networkname
 ```
 - Just run the `archinstall` script. This are the only relevant steps that you need to follow for this build:
-  - Use `ext4` file type for your system
+  - Use `ext4` file type for your system.
   - `Systemd-bootloader` can give you problems with encryptation, in that case just use `GRUB`
-  - Choose `Hyperland` as profile
+  - Choose `Hyperland` as profile.
   - Choose `NetworkManager`
-  - Extra libraries for `32bit` support
-  - Once is done reboot your system
+  - Extra libraries for `32bit` support.
+  - Once is done reboot your system.
   
-- Edit `pacman.conf`:
+- Edit `pacman.conf`
 ```bash
 nano /etc/pacman.conf
 # Uncoment Color
@@ -115,9 +115,9 @@ https://github.com/b0llull0s/P4n1c-Arch.git
 cd ~/P4nic-Arch
 chmod +x *.sh
 ```
-- You may also want to create a new directory with your desired profile name on `Wireshark/profile` and move the files inside
-- You may want to add your wallpapers to the `w4llp4p3rs` folder or just change the name and path on the script as you want
-- If you experience problems with `py-wal`, make sure that all the paths inside the config files match with your system files
+- You may also want to create a new directory with your desired profile name on `Wireshark/profile` and move the files inside.
+- You may want to add your wallpapers to the `w4llp4p3rs` folder or just change the name and path on the script as you want.
+- If you experience problems with `py-wal`, make sure that all the paths inside the config files match with your system files.
 
 ![Screenshot](screenshot.png)
 
@@ -131,7 +131,7 @@ wal -i Downloads/w4llp4p3rs/1.jpg
 ```bash
 usermod --shell /usr/bin/zsh username
 ```
-- Refresh your system data base
+- Refresh your system data base:
 ```bash
 sudo updatedb
 ``` 
@@ -175,10 +175,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ## Credits and appreciations 
 
-- Credit to **_Stephan Raabe_** for the base idea behind the custom scripts and all the `pywal` integration without his youtube channel would have been way harder
-- Credit to **_s4vitar_** for the `rmk` function
-- Credit to the **_annonymous_** user who posted the `waybar` custom module to see your public ip
-- Credit to **_@PenAce_** for the `wireshark` profiles taken from his awesome video
+- Credit to **_Stephan Raabe_** for the base idea behind the custom scripts and all the `pywal` integration without his youtube channel would have been way harder.
+- Credit to **_s4vitar_** for the `rmk` function.
+- Credit to the **_annonymous_** user who posted the `waybar` custom module to see your public ip.
+- Credit to **_@PenAce_** for the `wireshark` profiles taken from his awesome video.
 - Credit to **_Alan Moore_** and **_Dave Gibbons_** for `image1` and The band **_Sleep_** for `image2`
 - Wallpaper by **_Wenqing Yan_**. ;) 
 
