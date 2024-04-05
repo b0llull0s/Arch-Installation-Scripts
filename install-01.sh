@@ -124,14 +124,15 @@ yay -S --noconfirm scrub || error_exit "Failed to install scrub"
 yay -S --noconfirm zsh-syntax-highlighting zsh-autosuggestions || error_exit "Failed to install zsh plugins"
 
 # Dot Files
-for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr kitty rofi swappy waybar wireshark; do
+for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr kitty rofi swappy waybar; do
     cp -r "$config_dir" ~/.config/ || error_exit "Failed to copy $config_dir"
 done
+cp -r wireshark/profiles ~/.config/wireshark/profiles || error_exit "Failed to copy wireshark/profiles"
 cp -r wal/templates ~/.config/wal/templates || error_exit "Failed to copy wal/templates"
 cp .zshrc ~/ || error_exit "Failed to copy .zshrc"
 
 # Set pywal
-wal -i ~/Downloads/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
+wal -i ~/P4n1c-Arch/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
 
 # Script Permissions
 sudo chmod +x ~/.config/hyper/scripts/*.sh || error_exit "Failed to change script permissions"
