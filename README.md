@@ -120,6 +120,20 @@ chmod +x *.sh
 - You may also want to create a new directory with your desired profile name on `Wireshark/profile` and move the files inside.
 - You may want to add your wallpapers to the `w4llp4p3rs` folder or just change the name and path on the script as you want.
 - If you experience problems with `py-wal`, make sure that all the paths inside the config files match with your system files.
+### Yubikey
+- To intagrate your `yubikey` follow the next steps:
+```bash
+# Introduce this command, if it generates a hash is all good
+pamu2fcfg
+# Create the directory for the config files
+mkdir -p ~/.config/Yubico
+# Now register the hash in the config file
+pamu2fcfg > .config/Yubico/u2f_keys
+# Now configure PAM
+sudo nano /etc/pam.d/sudo
+# And and the next line above
+auth sufficient pam_u2f.so
+```
 
 ![Screenshot](screenshot.png)
 
