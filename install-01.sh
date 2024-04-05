@@ -88,7 +88,7 @@ install_packages btop
 install_packages neovim code
 
 # Utils
-install_packages waybar python-pywal obsidian signal-desktop bleachbit cliphist
+install_packages waybar python-pywal obsidian signal-desktop bleachbit cliphist pam_yubico pam-u2f
 
 # Wireshark
 install_packages wireshark-qt
