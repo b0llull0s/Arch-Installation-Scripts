@@ -133,7 +133,7 @@ pamu2fcfg -o pam://me -i pam://me > ~/.config/Yubico/u2f_keys
 # Now configure PAM
 sudo nano /etc/pam.d/sudo
 # And and the next line 
-auth            required      pam_u2f.so cue origin=pam://me appid=pam://me
+auth            sufficient      pam_u2f.so cue origin=pam://me appid=pam://me
 ```
 
 ![Screenshot](screenshot.png)
