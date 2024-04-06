@@ -129,11 +129,11 @@ pamu2fcfg
 # Create the directory for the config files
 mkdir -p ~/.config/Yubico
 # Now register the hash in the config file
-pamu2fcfg > .config/Yubico/u2f_keys
+pamu2fcfg -o pam://me -i pam://me > ~/.config/Yubico/u2f_keys
 # Now configure PAM
 sudo nano /etc/pam.d/sudo
-# And and the next line above
-auth sufficient pam_u2f.so
+# And and the next line 
+auth            required      pam_u2f.so cue origin=pam://me appid=pam://me
 ```
 
 ![Screenshot](screenshot.png)
