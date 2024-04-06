@@ -9,7 +9,6 @@
 
   - `Ranger` and `kitty` integration.
   - `Waybar` batteries module.
-  - `Yubikey` CLI integration
     
 ![Screenshot](screenshot1.png)
 
