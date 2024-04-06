@@ -54,7 +54,7 @@
 
 ### Cybersecurity features:
 
-- `yubikey` integration.
+- `yubikey` integration for passwordless `sudo`.
 - `blackarch` library.
 - `wireshark` profiles.
 - Just use `signal`.
