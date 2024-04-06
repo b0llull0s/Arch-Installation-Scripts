@@ -9,6 +9,7 @@
 
   - `Ranger` and `kitty` integration.
   - `Waybar` batteries module.
+  - `Yubikey` CLI integration
     
 ![Screenshot](screenshot1.png)
 
@@ -53,10 +54,10 @@
 
 ### Cybersecurity features:
 
-- Yubikey integration.
-- Black Arch libraries.
-- Wireshark profiles.
-- Just use signal.
+- `yubikey` integration.
+- `blackarch` library.
+- `wireshark` profiles.
+- Just use `signal`.
 
 ## Installation:
 
