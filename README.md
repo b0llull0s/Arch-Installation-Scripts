@@ -153,7 +153,7 @@ sudo echo "SUCCESS"
 
 - In case you need to generate a new `py-wal` template just run:
 ```bash
-wal -i Downloads/w4llp4p3rs/1.jpg
+wal -i ~/Downloads/w4llp4p3rs/1.jpg
 ```
 - In case you need to make zsh your default shell:
 ```bash
