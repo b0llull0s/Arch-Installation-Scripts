@@ -23,7 +23,7 @@ enable_services() {
 }
 
 # Remove unnecessary packages
-sudo pacman -Rs --noconfirm dolphin dunst wofi || error_exit "Failed to remove dolphin"
+sudo pacman -Rs --noconfirm dolphin wofi || error_exit "Failed to remove dolphin"
 
 # Home directories setup
 mkdir -p ~/Downloads ~/Screenshots || error_exit "Failed to create directories"
