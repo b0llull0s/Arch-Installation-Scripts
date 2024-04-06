@@ -50,13 +50,13 @@ cd yay-git
 makepkg -si || error_exit "Failed to install yay"
 cd ..
 
-# PacCache setup
-sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
-
 # Mirrors setup
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup || error_exit "Failed to backup mirrorlist"
 sudo pacman -Sy --noconfirm pacman-contrib || error_exit "Failed to install pacman-contrib"
 sudo rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist || error_exit "Failed to rank mirrors"
+
+# PacCache setup
+sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
 
 # packages grouped by category
 
