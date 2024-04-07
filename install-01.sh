@@ -129,7 +129,6 @@ for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr kitty rofi swappy waybar; 
 done
 cp -r wireshark ~/.config || error_exit "Failed to copy wireshark/profiles"
 cp -r wal ~/.config || error_exit "Failed to copy wal/templates"
-cp .zshrc ~/ || error_exit "Failed to copy .zshrc"
 
 # Script Permissions
 sudo chmod +x ~/.config/hypr/scripts/*.sh || error_exit "Failed to change script permissions"
@@ -142,6 +141,9 @@ wal -i ~/P4n1c-Arch/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
 
 # Set Wallpaper
 swww img ~/P4n1c-Arch/w4llp4p3rs/1.jpg
+
+# Zsh
+cp .zshrc ~/ || error_exit "Failed to copy .zshrc"
 
 echo "Finished! Please reboot."
 
