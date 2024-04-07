@@ -53,7 +53,7 @@ cd ..
 # Mirrors setup
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup || error_exit "Failed to backup mirrorlist"
 sudo pacman -Sy --noconfirm pacman-contrib || error_exit "Failed to install pacman-contrib"
-sudo rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist || error_exit "Failed to rank mirrors"
+# sudo rankmirrors -n 6 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist || error_exit "Failed to rank mirrors"
 
 # PacCache setup
 sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
@@ -108,7 +108,7 @@ yay -S --noconfirm ttf-firacode-nerd || error_exit "Failed to install Fira Code 
 
 # swww
 yay -S --noconfirm swww || error_exit "Failed to install swww"
-sudo swww init || error_exit "Failed to initialize swww"
+swww-daemon --format xrgb || error_exit "Failed to initialize swww"
 
 # librewolf
 yay -S --noconfirm librewolf-bin || error_exit "Failed to install librewolf-bin"
@@ -131,14 +131,17 @@ cp -r wireshark ~/.config || error_exit "Failed to copy wireshark/profiles"
 cp -r wal ~/.config || error_exit "Failed to copy wal/templates"
 cp .zshrc ~/ || error_exit "Failed to copy .zshrc"
 
-# Set pywal
-wal -i ~/P4n1c-Arch/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
-
 # Script Permissions
 sudo chmod +x ~/.config/hypr/scripts/*.sh || error_exit "Failed to change script permissions"
 
 # OMZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || error_exit "Failed to install oh-my-zsh"
+
+# Set pywal
+wal -i ~/P4n1c-Arch/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
+
+# Set Wallpaper
+swww img ~/P4n1c-Arch/w4llp4p3rs/1.jpg
 
 echo "Finished! Please reboot."
 
