@@ -129,7 +129,7 @@ chmod +x *.sh
 nordvpn login
 # Copy the link
 nordvpn login --callback "nordvpnlink"
-# Or Use a generated token
+# Or use a generated token
 nordvpn login --token "tokencode"
 ```
 
