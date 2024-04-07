@@ -23,7 +23,7 @@ enable_services() {
 }
 
 # Remove unnecessary packages
-sudo pacman -Rs --noconfirm dolphin wofi || error_exit "Failed to remove dolphin"
+sudo pacman -Rs --noconfirm dolphin wofi
 
 # Home directories setup
 mkdir -p ~/Downloads ~/Screenshots || error_exit "Failed to create directories"
@@ -64,7 +64,7 @@ sudo systemctl enable --now paccache.timer || error_exit "Failed to enable pacca
 install_packages curl wget locate neofetch exa bat
 
 # Programming & Development
-install_packages python-pip cargo jre-openjdk jdk-openjdk go
+install_packages python-pip cargo go
 
 # Terminals & Shells
 install_packages zsh alacritty
@@ -95,7 +95,7 @@ install_packages wireshark-qt
 sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for dumpcap"
 
 # Virtual Box
-install_packages virtualbox virtualbox-guest-utils virtualbox-host-modules-arch
+#install_packages virtualbox virtualbox-guest-utils virtualbox-host-modules-arch
 
 # Screenshots
 install_packages grim swappy slurp
@@ -127,15 +127,15 @@ yay -S --noconfirm zsh-syntax-highlighting zsh-autosuggestions || error_exit "Fa
 for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr kitty rofi swappy waybar; do
     cp -r "$config_dir" ~/.config/ || error_exit "Failed to copy $config_dir"
 done
-cp -r wireshark/profiles ~/.config/wireshark/profiles || error_exit "Failed to copy wireshark/profiles"
-cp -r wal/templates ~/.config/wal/templates || error_exit "Failed to copy wal/templates"
+cp -r wireshark ~/.config || error_exit "Failed to copy wireshark/profiles"
+cp -r wal ~/.config || error_exit "Failed to copy wal/templates"
 cp .zshrc ~/ || error_exit "Failed to copy .zshrc"
 
 # Set pywal
 wal -i ~/P4n1c-Arch/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
 
 # Script Permissions
-sudo chmod +x ~/.config/hyper/scripts/*.sh || error_exit "Failed to change script permissions"
+sudo chmod +x ~/.config/hypr/scripts/*.sh || error_exit "Failed to change script permissions"
 
 # OMZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || error_exit "Failed to install oh-my-zsh"
