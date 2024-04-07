@@ -8,7 +8,7 @@
 ### Planning to add the next features soon:
 
   - `Ranger` and `kitty` integration.
-  - `Waybar` batteries module.
+  - Issues with Virtualbox packages.
     
 ![Screenshot](screenshot1.png)
 
