@@ -8,7 +8,7 @@
 ### Planning to add the next features soon:
 
   - `Ranger` and `kitty` integration.
-  - Issues with Virtualbox packages.
+  - Issues with `Virtualbox` packages.
     
 ![Screenshot](screenshot1.png)
 
