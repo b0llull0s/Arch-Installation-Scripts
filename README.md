@@ -5,7 +5,7 @@
 - Have in mind that `hyperland` wont work on virtual machines, so this installation will only work on bare metal.
 - Uses dark theme.
   
-### Planning to add the next features soon:
+### Futures features and fixes:
 
   - `Ranger` and `kitty` integration.
   - Issues with `Virtualbox` packages.
