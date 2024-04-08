@@ -74,6 +74,7 @@ install_packages cmus pamixer pavucontrol
 
 # Bluetooth
 install_packages blueman bluez bluez-utils
+enable_services bluetooth
 
 # Launcher
 install_packages rofi
@@ -109,6 +110,9 @@ yay -S --noconfirm ttf-firacode-nerd || error_exit "Failed to install Fira Code 
 # swww
 yay -S --noconfirm swww || error_exit "Failed to install swww"
 swww-daemon --format xrgb || error_exit "Failed to initialize swww"
+
+# burp
+yay -S --noconfirm burpsuite || error_exit "Failed to install burpsuite"
 
 # librewolf
 yay -S --noconfirm librewolf-bin || error_exit "Failed to install librewolf-bin"
