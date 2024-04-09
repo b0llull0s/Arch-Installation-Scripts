@@ -99,6 +99,7 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
+alias pac="sudo pacman -S"
 alias wclass="xprop | grep 'CLASS'"
 alias syst='systemctl status'
 alias syse='systemctl enable'
