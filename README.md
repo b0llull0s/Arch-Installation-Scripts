@@ -34,7 +34,7 @@
   
 ### Additional Packages included:
 
-`pacman-contrib`  `yay`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `burp`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `jre-openjdk`  `jdk-openjdk`  `go`  `pamixer`  `cmus`  `scrub` `pam_yubico` `pam-u2f` `burpsuite` `atool` `unzip` `zip`
+`pacman-contrib`  `yay`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `burp`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `go`  `pamixer`  `cmus`  `scrub` `pam_yubico` `pam-u2f` `burpsuite` `atool` `unzip` `zip`
 
 ### Zsh Plugings, Aliases and Functions:
 
