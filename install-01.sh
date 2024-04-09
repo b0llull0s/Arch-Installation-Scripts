@@ -89,7 +89,7 @@ install_packages btop
 install_packages code
 
 # Utils
-install_packages waybar python-pywal obsidian signal-desktop bleachbit cliphist pam_yubico pam-u2f atool unzip zip
+install_packages waybar python-pywal obsidian signal-desktop bleachbit cliphist pam_yubico pam-u2f atool unzip zip sxiv
 
 # Wireshark
 install_packages wireshark-qt
