@@ -86,10 +86,10 @@ install_packages ranger nemo
 install_packages btop
 
 # Code Editors
-install_packages neovim code
+install_packages code
 
 # Utils
-install_packages waybar python-pywal obsidian signal-desktop bleachbit cliphist pam_yubico pam-u2f
+install_packages waybar python-pywal obsidian signal-desktop bleachbit cliphist pam_yubico pam-u2f atool unzip zip
 
 # Wireshark
 install_packages wireshark-qt
