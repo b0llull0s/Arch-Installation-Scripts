@@ -184,6 +184,7 @@ locate zsh-autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
 - Nowdays with `Steam` using `proton` you dont need to install the `graphical drivers` yourself, the correct drivers for your system will be install when installing `proton` from `Steam`
+- Use `atool` to compress and uncompress files, worth to have a look at the `Arch Manual pages`
 
 ## Keybindings:
 
