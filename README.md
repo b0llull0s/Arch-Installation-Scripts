@@ -135,7 +135,7 @@ nordvpn login --token "tokencode"
 
 ### Yubikey:
 
-- To intagrate your `yubikey` for passwordless sudo:
+- To integrate your `yubikey` for passwordless sudo:
 ```bash
 # Introduce this command, if it generates a hash is all good
 pamu2fcfg
