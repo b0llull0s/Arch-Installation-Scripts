@@ -34,7 +34,6 @@ curl -fsSL https://blackarch.org/strap.sh | sudo bash || error_exit "Failed to e
 # Firewall setup
 install_packages ufw
 sudo ufw enable || error_exit "Failed to enable UFW"
-sudo ufw status verbose || error_exit "Failed to get UFW status"
 enable_services ufw.service
 
 ## Nerdfonts ##
@@ -85,9 +84,6 @@ install_packages ranger nemo
 # Task Manager
 install_packages btop
 
-# Code Editors
-install_packages code
-
 # Utils
 install_packages waybar python-pywal obsidian signal-desktop bleachbit cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip wine wine-mono wine-gecko
 
@@ -104,6 +100,8 @@ install_packages grim swappy slurp
 # Python
 install_packages python-requests python-beautifulsoup4
 
+# Codium
+yay -S vscodium-bin || error_exit "Failed to install Codium"
 # Fira Code Nerd
 yay -S --noconfirm ttf-firacode-nerd || error_exit "Failed to install Fira Code Nerd"
 
