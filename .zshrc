@@ -117,6 +117,7 @@ alias gpo='git push -u origin main'
 alias gp='git push .'
 alias gpl='git pull'
 alias ps!='ps -auxwf'
+alias psg='ps -ef | grep'
 alias dz='aunpack'
 
 ## Functions ##
