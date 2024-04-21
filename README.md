@@ -8,7 +8,6 @@
 ### Futures features and fixes:
 
   - `Ranger` and `kitty` integration.
-  - Virtualization. 
    
 ![Screenshot](screenshot1.png)
 
