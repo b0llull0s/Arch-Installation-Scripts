@@ -33,7 +33,7 @@
   
 ### Additional Packages included:
 
-`pacman-contrib`  `yay`  `atool` `unzip` `zip`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `go`  `pamixer`  `cmus`  `vscodium-bin`  `scrub`  `pam_yubico`  `pam-u2f`  `burpsuite`  `sxiv`  `p7zip`  `wine`  `wine-mono`  `wine-gecko`
+`pacman-contrib`  `yay`  `atool` `unzip` `zip`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `go`  `pamixer`  `cmus`  `vscodium-bin`  `scrub`  `pam_yubico`  `pam-u2f`  `burpsuite`  `sxiv`  `p7zip`  `wine`  `wine-mono`  `wine-gecko`  `apparmor`
 
 ### Zsh Plugings, Aliases and Functions:
 
@@ -157,6 +157,22 @@ auth            sufficient      pam_u2f.so cue origin=pam://me appid=pam://me
 - Without closing the `PAM` file test to see if it works:
 ```bash
 sudo echo "SUCCESS"
+```
+### AppArmor
+- Add the kernel parameters to your bootloader
+```bash
+# For GRUB:
+sudo nano /etc/default/grub
+# Edit this line so it looks like this:
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet lsm=landlock,lockdown,yama,apparmor,bpf"
+# Now run this command:
+grub-mkconfig -o /boot/grub/grub.cfg
+# Enable the service:
+sudo systemctl enable apparmor.service
+# Reboot your system and check if AppArmor enabled:
+aa-enabled
+# Now parse the profiles
+sudo apparmor_parser /usr/share/apparmor/extra-profiles
 ```
 
 ![Screenshot](screenshot.png)
