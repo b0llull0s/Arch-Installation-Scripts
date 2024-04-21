@@ -60,7 +60,7 @@ sudo systemctl enable --now paccache.timer || error_exit "Failed to enable pacca
 # packages grouped by category
 
 # Binaries
-install_packages curl wget locate neofetch exa bat
+install_packages curl wget locate neofetch exa bat apparmor
 
 # Programming & Development
 install_packages python-pip cargo go
