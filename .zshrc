@@ -119,7 +119,7 @@ alias gpl='git pull'
 alias ps!='ps -auxwf'
 alias psg='ps -ef | grep'
 alias dz='aunpack'
-
+alias pacsize='LC_ALL=C.UTF-8 pacman -Qi | awk '\''/^Name/{name=$3} /^Installed Size/{print $4$5, name}'\'' | LC_ALL=C.UTF-8 sort -h | grep'
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 function rmk() { scrub -p dod $1; shred -zun 10 -v $1; }
