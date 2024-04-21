@@ -158,7 +158,7 @@ auth            sufficient      pam_u2f.so cue origin=pam://me appid=pam://me
 ```bash
 sudo echo "SUCCESS"
 ```
-### AppArmor
+### AppArmor:
 - Add the kernel parameters to your bootloader
 ```bash
 # For GRUB:
