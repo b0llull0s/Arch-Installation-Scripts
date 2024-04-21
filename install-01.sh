@@ -100,8 +100,15 @@ install_packages grim swappy slurp
 # Python
 install_packages python-requests python-beautifulsoup4
 
+# Snaps
+yay -S snapd || error_exit "Failed to install Snapd"
+sudo systemctl enable --now snapd.socket
+sudo systemctl enable --now snapd.apparmor.service
+sudo ln -s /var/lib/snapd/snap /snap\n
+
 # Codium
 yay -S vscodium-bin || error_exit "Failed to install Codium"
+
 # Fira Code Nerd
 yay -S --noconfirm ttf-firacode-nerd || error_exit "Failed to install Fira Code Nerd"
 
