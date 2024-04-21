@@ -159,7 +159,7 @@ auth            sufficient      pam_u2f.so cue origin=pam://me appid=pam://me
 sudo echo "SUCCESS"
 ```
 ### AppArmor:
-- Add the kernel parameters to your bootloader
+- Add the kernel parameters to your bootloader:
 ```bash
 # For GRUB:
 sudo nano /etc/default/grub
