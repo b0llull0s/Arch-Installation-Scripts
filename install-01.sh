@@ -92,7 +92,7 @@ install_packages wireshark-qt
 sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for dumpcap"
 
 # Virtual Box
-#install_packages virtualbox virtualbox-guest-utils virtualbox-host-modules-arch
+install_packages virtualbox virtualbox-guest-utils virtualbox-host-modules-arch
 
 # Screenshots
 install_packages grim swappy slurp
