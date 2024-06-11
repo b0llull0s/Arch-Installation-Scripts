@@ -33,7 +33,7 @@
   
 ### Additional Packages included:
 
-`pacman-contrib`  `yay`  `atool` `unzip` `zip`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `less`  `tree`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `go`  `pamixer`  `cmus`  `vscodium-bin`  `scrub`  `pam_yubico`  `pam-u2f`  `burpsuite`  `sxiv`  `p7zip`  `wine`  `wine-mono`  `wine-gecko`  `apparmor`  `snapd`  `whois`
+`pacman-contrib`  `yay`  `atool` `unzip` `zip`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `less`  `tree`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `go`  `pamixer`  `cmus`  `vscodium-bin`  `scrub`  `pam_yubico`  `pam-u2f`  `burpsuite`  `sxiv`  `p7zip`  `wine`  `wine-mono`  `wine-gecko`  `apparmor`  `snapd`  `whois`  `tcpdump`
 
 ### Zsh Plugings, Aliases and Functions:
 
