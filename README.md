@@ -19,7 +19,7 @@
 | Terminal Manager       | Alacritty, kitty       |
 | File Manager           | Ranger, Nemo           |
 | Status Bar             | Waybar                 |
-| Launcher               | Rofi                    |
+| Launcher               | Wofi                    |
 | Shell                  | Zsh                    |
 | Browser                | Librewolf              |
 | Text Editor            | Codium                 |
@@ -33,7 +33,7 @@
   
 ### Additional Packages included:
 
-`pacman-contrib`  `yay`  `atool` `unzip` `zip`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `less`  `tree`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `go`  `pamixer`  `cmus`  `vscodium-bin`  `scrub`  `pam_yubico`  `pam-u2f`  `burpsuite`  `sxiv`  `p7zip`  `wine`  `wine-mono`  `wine-gecko`  `apparmor`  `snapd`  `whois`  `tcpdump`
+`pacman-contrib`  `yay`  `atool` `unzip` `zip`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `less`  `tree`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `go`  `pamixer`  `cmus`  `vscodium-bin`  `scrub`  `pam_yubico`  `pam-u2f`  `burpsuite`  `sxiv`  `p7zip`  `wine-mono`  `wine-gecko`  `apparmor`  `snapd`  `whois`  `tcpdump`
 
 ### Zsh Plugings, Aliases and Functions:
 
@@ -55,6 +55,7 @@
 - `yubikey` integration for passwordless `sudo`.
 - `blackarch` library.
 - `wireshark` profiles.
+- `AppArmor` profiles.
 - Just use `signal`.
 
 ## Installation:
