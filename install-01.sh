@@ -23,7 +23,7 @@ enable_services() {
 }
 
 # Remove unnecessary packages
-sudo pacman -Rs --noconfirm dolphin wofi
+sudo pacman -Rs --noconfirm dolphin
 
 # Home directories setup
 mkdir -p ~/Downloads ~/Screenshots || error_exit "Failed to create directories"
@@ -74,9 +74,6 @@ install_packages cmus pamixer pavucontrol
 # Bluetooth
 install_packages blueman bluez bluez-utils
 enable_services bluetooth
-
-# Launcher
-install_packages rofi
 
 # File Managers
 install_packages ranger nemo
