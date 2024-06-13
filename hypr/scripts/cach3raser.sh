@@ -5,19 +5,17 @@
 #   ||    |   //    ^   /|  |   \|   |\ \\___ //   |   \\//______\ \\
 #   ||    |  / \____  |||___|__/|___| \___//>\\______////_______  // 
 #    \\__/        ||__|/     \/           \/         \/         \//                
-#                  \  /      /             \         /          /                                                      
-#  
-# by Isaac P. Bassart (22-11-2023) 
+#                  \  /      /             \         /          /                                                       
 # ----------------------------------------------------- 
+#_#
 usage() {
     echo "Usage: $0 [-copy [PATH]] [-hard]"
-    echo "  -copy [PATH]  Copy the .cache to PATH."
+    echo "  -copy [PATH]  Optionally copy the .cache directory to the specified PATH."
     echo "               If PATH is not provided, copy to the current directory."
     echo "  -hard        Securely delete files using rmk function."
     exit 1
 }
-
-# -hard
+#_#
 rmk() {
     scrub -p dod "$1"
     shred -zun 10 -v "$1"
@@ -46,30 +44,33 @@ while [[ "$1" != "" ]]; do
     esac
 done
 #_#
-CACHE_DIR="~/.cache"
-EXCLUDE_DIR="wal" #_# Exclude list #_#
+CACHE_DIR="/home/b0llull0s/.cache"
+#_#
+EXCLUDE_DIR="wal"
+#_#
 TEMP_DIR=$(mktemp -d)
+#_#
 mv "$CACHE_DIR/$EXCLUDE_DIR" "$TEMP_DIR"
-#_# Copy 
+#_#
 if [[ "$COPY_PATH" != "" ]]; then
     cp -r "$CACHE_DIR" "$COPY_PATH"
     echo ".cache directory copied to $COPY_PATH."
 fi
-#_# Hard 
+#_#
 if $HARD_DELETE; then
     
     find "$CACHE_DIR"/* -exec rmk {} \;
 else
     
-    rm -rf "$CACHE_DIR"/*
+    find "$CACHE_DIR"/* -not -path "$CACHE_DIR/$EXCLUDE_DIR/*" -delete
 fi
 #_#
 mv "$TEMP_DIR/$EXCLUDE_DIR" "$CACHE_DIR"
-#_# Soft
+#_#
 rmdir "$TEMP_DIR"
-
-echo "Soft clear"
-
+#_#
+echo "Cache cleared, except for $CACHE_DIR/$EXCLUDE_DIR."
+#_#
 if $HARD_DELETE; then
-    echo "Hard clear"
+    echo "Files were securely deleted using the rmk function."
 fi
