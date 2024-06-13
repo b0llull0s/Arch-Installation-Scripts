@@ -76,7 +76,7 @@ install_packages blueman bluez bluez-utils
 enable_services bluetooth
 
 # File Managers
-install_packages ranger nemo
+install_packages ranger
 
 # Task Manager
 install_packages btop
