@@ -99,6 +99,7 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
+#alias usb1="sudo mount /dev/sda1"
 alias pac="sudo pacman -S"
 alias wclass="xprop | grep 'CLASS'"
 alias syst='systemctl status'
@@ -123,3 +124,4 @@ alias pacsize='LC_ALL=C.UTF-8 pacman -Qi | awk '\''/^Name/{name=$3} /^Installed 
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 function rmk() { scrub -p dod $1; shred -zun 10 -v $1; }
+function walup() { wal -i "$(find ~/Downloads/w4llp4p3rs -type f -name '*.jpeg' | shuf -n 1)"; }
