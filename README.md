@@ -11,7 +11,6 @@
   
 ### Futures features and fixes:
 
-  - `Ranger` and `kitty` integration.
   - `Wofi` and `pywal` integration.
   - Add more `hyprland` enverioments.  
    
@@ -22,8 +21,8 @@
 | Category               | Software               
 |------------------------|------------------------|
 | Window Manager         | Hyprland               |
-| Terminal Manager       | Alacritty, kitty       |
-| File Manager           | Ranger, Nemo           |
+| Terminal Manager       | Alacritty              |
+| File Manager           | Ranger                 |
 | Status Bar             | Waybar                 |
 | Launcher               | Wofi                    |
 | Shell                  | Zsh                    |
@@ -221,7 +220,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 | `Super + F`                          | Librewolf               |
 | `Super + K`                          | Kill Window             |
 | `Super + D`                          | Wofi                     |
-| `Super + E`                          | Nemo                    |
 | `Super + [1-9]`                      | Switch Workspace        |
 | `Super + [SHIFT] + [1-9]`            | Move Window to Workspace|
 | `Super + [SHIFT] + [ARROW]`          | Resize Window           |
@@ -243,6 +241,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 | `Super + Q`                          | Volume Up               |
 | `Super + A`                          | Volume Down             |
 | `Super + R`                          | Clear cache             |
+| `Super + E`                          | Clear cache Hard        |
 
 ## Credits and appreciations 
 
