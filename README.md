@@ -124,6 +124,7 @@ https://github.com/b0llull0s/P4n1c-Arch.git
 cd ~/P4nic-Arch
 chmod +x *.sh
 ```
+- Some application doesnt accept relatives paths and you will have to change those.
 - You may also want to create a new directory with your desired profile name on `Wireshark/profile` and move the files inside.
 - You may want to add your wallpapers to the `w4llp4p3rs` folder or just change the name and path on the script as you want.
 - If you experience problems with `py-wal`, make sure that all the paths inside the config files match with your system files.
