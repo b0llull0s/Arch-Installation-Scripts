@@ -12,6 +12,8 @@
 ### Futures features and fixes:
 
   - `Ranger` and `kitty` integration.
+  - `Wofi` and `pywal` integration.
+  - `hyprland` enverioment.  
    
 ![Screenshot](screenshot1.png)
 
