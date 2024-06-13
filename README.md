@@ -1,6 +1,6 @@
 ## Synopsis:
 
-- Simple installation script for Arch Linux with `wayland`, `hyperland` and `waybar` riced with `py-wal`
+- `Wayland`, `Hyperland`, `Waybar` riced with `py-wal`
 - Fair amount of aliases and plugins.
 - Custom Scripts
 - Yubikey CLI integration for `sudo`.
