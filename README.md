@@ -186,13 +186,12 @@ sudo apparmor_parser /usr/share/apparmor/extra-profiles
 
 ## Tips:
 
-- For safety reason and live improvement the script doesnt deletes kitty, but if you dont need it feel free to remove it
+- For safety reasons and live improvement the script doesnt delete kitty, but if you dont need it feel free to remove it yourself.
 ```bash
 sudo pacman -Rs kitty
 ```
 - In case you need to generate a new `py-wal` template just use the alias `walup`:
 ```bash
-walup
 # For a specific file
 wal -i ~/Downloads/w4llp4p3rs/1.jpg
 ```
