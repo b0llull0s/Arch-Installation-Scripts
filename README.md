@@ -53,6 +53,7 @@
 - Waybar reset for troubleshooting.
 - Theme Change.
 - Screenshot and edition.
+- Cache management.
 
 ### Cybersecurity features:
 
