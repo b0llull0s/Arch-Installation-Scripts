@@ -11,8 +11,9 @@
   
 ### Futures features and fixes:
 
-  - `Wofi` and `pywal` integration.
-  - Add more `hyprland` enverioments.  
+- Fix `wireshark` profiles.
+- `Wofi` and `pywal` integration.
+- Add more `hyprland` enverioments.  
    
 ![Screenshot](screenshot1.png)
 
