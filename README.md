@@ -180,8 +180,10 @@ sudo apparmor_parser /usr/share/apparmor/extra-profiles
 
 ## Tips:
 
-- In case you need to generate a new `py-wal` template just run:
+- In case you need to generate a new `py-wal` template just use the alias `walup`:
 ```bash
+walup
+# For a specific file
 wal -i ~/Downloads/w4llp4p3rs/1.jpg
 ```
 - In case you need to make zsh your default shell:
@@ -199,6 +201,7 @@ locate zsh-autosuggestions
 # Copy the .zsh entry and add it as source in the config file:
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
+- Check `.zshsrc` to see the aliases and change them to your needs.
 - Nowdays with `Steam` using `proton` you dont need to install the `graphical drivers` yourself, the correct drivers for your system will be install when installing `proton` from `Steam`
 - Use `atool` to compress and uncompress files, worth to have a look at the `Arch Manual pages`
 - Once you have apparmor ready you may want to have a look to the snap store.
@@ -210,27 +213,29 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 | `Super + Enter`                      | Alacritty               |
 | `Super + F`                          | Librewolf               |
 | `Super + K`                          | Kill Window             |
-| `Super + D`                          | Rofi                    |
+| `Super + D`                          | Wofi                     |
 | `Super + E`                          | Nemo                    |
 | `Super + [1-9]`                      | Switch Workspace        |
 | `Super + [SHIFT] + [1-9]`            | Move Window to Workspace|
 | `Super + [SHIFT] + [ARROW]`          | Resize Window           |
+| `Super + [CTRL] + [ARROW]`           | Move Window             |
 | `Super + [ARROW]`                    | Move within Windows     |
 | `Super + P`                          | Toggle Split            |
 | `Super + O`                          | Toggle Float            |
 | `Super + I`                          | Swap Horizontal/Verical |
 | `Super + U`                          | Full screen             |
 | `Super + [PRINTSCRN]`                | Screenshot              |
-| `Super + C`                          | VSCode                  |
-| `Super + T`                          | Obsidian                |
-| `Super + X`                          | code .config            |
-| `Super + Z`                          | code .zshsrc            |
+| `Super + C`                          | Codium                  |
+| `Super + M`                          | Obsidian                |
+| `Super + X`                          | codium .config           |
+| `Super + Z`                          | codium .zshsrc          |
 | `Super + S`                          | Signal                  |
 | `Super + W`                          | Wireshark               |
 | `Super + B`                          | Reset waybar            |
 | `Super + N`                          | Changes theme           |
 | `Super + Q`                          | Volume Up               |
 | `Super + A`                          | Volume Down             |
+| `Super + R`                          | Clear cache             |
 
 ## Credits and appreciations 
 
