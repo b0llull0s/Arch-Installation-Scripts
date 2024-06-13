@@ -1,8 +1,12 @@
 ## Synopsis:
 
 - Simple installation script for Arch Linux with `wayland`, `hyperland` and `waybar` riced with `py-wal`
-- It also unlocks the `blackarch` library and downloads some basic security utils.
-- This is a bare metal only setup.
+- Fair amount of aliases and plugins.
+- Custom Scripts
+- Yubikey CLI integration for `sudo`.
+- AppArmor enabled.
+- Unlocks `blackarch` library.
+- Bare metal only.
 - Uses dark theme.
   
 ### Futures features and fixes:
