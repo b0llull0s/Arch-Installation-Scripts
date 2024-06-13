@@ -13,7 +13,7 @@
 
   - `Ranger` and `kitty` integration.
   - `Wofi` and `pywal` integration.
-  - `hyprland` enverioment.  
+  - Add more `hyprland` enverioments.  
    
 ![Screenshot](screenshot1.png)
 
