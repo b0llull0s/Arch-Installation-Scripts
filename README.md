@@ -11,7 +11,7 @@
   
 ### Futures features and fixes:
 
-- Fix `wireshark` profiles.
+- Make `wireshark` profiles again.
 - Fix `Wofi`.
    
 ![Screenshot](screenshot1.png)
