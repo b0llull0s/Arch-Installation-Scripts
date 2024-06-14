@@ -22,6 +22,7 @@
 |------------------------|------------------------|
 | Window Manager         | Hyprland               |
 | Terminal Manager       | Alacritty              |
+| Clipboard Manager      | Cliphist               |
 | File Manager           | Ranger                 |
 | Status Bar             | Waybar                 |
 | Launcher               | Wofi                    |
@@ -215,6 +216,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 - Nowdays with `Steam` using `proton` you dont need to install the `graphical drivers` yourself, the correct drivers for your system will be install when installing `proton` from `Steam`
 - Use `atool` to compress and uncompress files, worth to have a look at the `Arch Manual pages`
 - Once you have apparmor ready you may want to have a look to the snap store.
+- I dont use `xwayland` but in case you do, the `env` path are commented on `hyprland.conf`.
 
 ## Mouse Bindings:
 
