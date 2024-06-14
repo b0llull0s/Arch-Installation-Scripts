@@ -12,8 +12,7 @@
 ### Futures features and fixes:
 
 - Fix `wireshark` profiles.
-- `Wofi` and `pywal` integration.
-- Add more `hyprland` enverioments.  
+- Fix `Wofi`.
    
 ![Screenshot](screenshot1.png)
 
@@ -217,9 +216,16 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 - Use `atool` to compress and uncompress files, worth to have a look at the `Arch Manual pages`
 - Once you have apparmor ready you may want to have a look to the snap store.
 
-## Keybindings:
+## Mouse Bindings:
 
-| Key Combination                      | Action                  |
+| Combination                          | Action                  |
+|--------------------------------------|-------------------------|
+| `Super + RIGHT CLICK`                | Resize Window           |
+| `ALT + LEFT CLICK`                   | Drag Window             |
+
+## Key Bindings:
+
+| Combination                          | Action                  |
 |--------------------------------------|-------------------------|
 | `Super + Enter`                      | Alacritty               |
 | `Super + F`                          | Librewolf               |
