@@ -12,7 +12,7 @@
 ### Futures features and fixes:
 
 - Make `wireshark` profiles again.
-- Fix `Wofi`.
+- Pywal integration with `Wofi`.
    
 ![Screenshot](screenshot1.png)
 
