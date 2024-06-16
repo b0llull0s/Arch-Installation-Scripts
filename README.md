@@ -255,6 +255,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 | `Super + A`                          | Volume Down             |
 | `Super + R`                          | Clear cache             |
 | `Super + E`                          | Clear cache Hard        |
+| `Super + V`                          | Clipboard               |
 
 ## Credits and appreciations 
 
