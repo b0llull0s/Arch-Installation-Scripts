@@ -99,6 +99,7 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
+alias clipwipe='cliphist wipe'
 alias usb1="sudo mount /dev/sdb1 /mnt"
 alias pac="sudo pacman -S"
 alias wclass="xprop | grep 'CLASS'"
