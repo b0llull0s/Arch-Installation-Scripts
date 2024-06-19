@@ -217,6 +217,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 - Use `atool` to compress and uncompress files, worth to have a look at the `Arch Manual pages`.
 - Once you have apparmor ready you may want to have a look to the `snap store`.
 - I dont use `xwayland` but in case you do, the `env` paths are commented on `hyprland.conf`.
+- At some point your pacman cache may grow more than it should, clear old libraries and cache to release space
+```sh
+find / -xdev -name core -ls -o  -path "/lib*" -prune
+```
 
 ## Mouse Bindings:
 
