@@ -122,7 +122,7 @@ alias ps!='ps -auxwf'
 alias psg='ps -ef | grep'
 alias dz='aunpack'
 alias pacsize='LC_ALL=C.UTF-8 pacman -Qi | awk '\''/^Name/{name=$3} /^Installed Size/{print $4$5, name}'\'' | LC_ALL=C.UTF-8 sort -h | grep'
-alias ipv5='cat /proc/sys/net.ipv6/conf/all/disable_ipv6'
+alias ipv6='cat /proc/sys/net.ipv6/conf/all/disable_ipv6'
 alias ipv6on='sudo sysctl net.ipv6.conf.all.disable_ipv6=0'
 alias ipv6off='sudo sysctl net.ipv6.conf.all.disable_ipv6=1'
 ## Functions ##
