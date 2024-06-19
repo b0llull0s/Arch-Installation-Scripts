@@ -212,7 +212,7 @@ locate zsh-autosuggestions
 # Copy the .zsh entry and add it as source in the config file:
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
-- Type `alias`.
+- Type `alias`to check the list of aliases.
 - Nowdays with `Steam` using `proton` you dont need to install the `graphical drivers` yourself, the correct drivers for your system will be install when installing `proton` from `Steam`.
 - Use `atool` to compress and uncompress files, worth to have a look at the `Arch Manual pages`.
 - Once you have apparmor ready you may want to have a look to the `snap store`.
