@@ -99,6 +99,7 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
+alias rmdir='rmdir --ignore-fail-on-non-empty'
 alias cwipe='cliphist wipe'
 alias usb1="sudo mount /dev/sda1 /mnt"
 alias pac="sudo pacman -S"
