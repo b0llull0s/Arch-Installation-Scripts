@@ -119,7 +119,7 @@ alias gc="git commit -m $1"
 alias gpo='git push -u origin main'
 alias gp='git push .'
 alias gpl='git pull'
-alias ps!='ps -auxwf'
+alias ps1='ps -auxwf'
 alias psg='ps -ef | grep'
 alias dz='aunpack'
 alias pacsize='LC_ALL=C.UTF-8 pacman -Qi | awk '\''/^Name/{name=$3} /^Installed Size/{print $4$5, name}'\'' | LC_ALL=C.UTF-8 sort -h | grep'
@@ -131,3 +131,5 @@ alias ipv6off='sudo sysctl net.ipv6.conf.all.disable_ipv6=1'
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 function rmk() { scrub -p dod $1; shred -zun 10 -v $1; }
 function walup() { wal -i "$(find ~/Downloads/w4llp4p3rs -type f -name '*.jpeg' | shuf -n 1)"; }
+export MODULAR_HOME="/home/b0llull0s/.modular"
+export PATH="/home/b0llull0s/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
