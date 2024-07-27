@@ -11,6 +11,7 @@
   
 ### Futures features and fixes:
 
+- Randomize and encrypt Signal Keys.
 - Make `wireshark` profiles again.
 - Pywal integration with `Wofi`.
    
@@ -63,7 +64,7 @@
 - `blackarch` library.
 - `wireshark` profiles.
 - `AppArmor` profiles.
-- Just use `signal`.
+- Encyptation `signal` keys.
 
 ## Installation:
 
