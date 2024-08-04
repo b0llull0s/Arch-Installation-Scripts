@@ -60,7 +60,7 @@ ENABLE_CORRECTION="true"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -127,9 +127,8 @@ alias pacc='sudo pacman -Scc'
 alias ipv6='cat /proc/sys/net.ipv6/conf/all/disable_ipv6'
 alias ipv6on='sudo sysctl net.ipv6.conf.all.disable_ipv6=0'
 alias ipv6off='sudo sysctl net.ipv6.conf.all.disable_ipv6=1'
+alias nc='netcat'
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 function rmk() { scrub -p dod $1; shred -zun 10 -v $1; }
 function walup() { wal -i "$(find ~/Downloads/w4llp4p3rs -type f -name '*.jpeg' | shuf -n 1)"; }
-export MODULAR_HOME="/home/b0llull0s/.modular"
-export PATH="/home/b0llull0s/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
