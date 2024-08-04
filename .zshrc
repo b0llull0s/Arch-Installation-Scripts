@@ -99,7 +99,7 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
-alias rmdir='rmdir --ignore-fail-on-non-empty'
+alias rmdir='rm -rf'
 alias cwipe='cliphist wipe'
 alias usb1="sudo mount /dev/sda1 /mnt"
 alias pac="sudo pacman -S"
@@ -122,7 +122,6 @@ alias gpl='git pull'
 alias ps1='ps -auxwf'
 alias psg='ps -ef | grep'
 alias dz='aunpack'
-alias pacsize='LC_ALL=C.UTF-8 pacman -Qi | awk '\''/^Name/{name=$3} /^Installed Size/{print $4$5, name}'\'' | LC_ALL=C.UTF-8 sort -h | grep'
 alias pacc='sudo pacman -Scc'
 alias ipv6='cat /proc/sys/net.ipv6/conf/all/disable_ipv6'
 alias ipv6on='sudo sysctl net.ipv6.conf.all.disable_ipv6=0'
