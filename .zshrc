@@ -3,6 +3,11 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export MODULAR_HOME="/home/b0llull0s/.modular"
+export PATH="/home/b0llull0s/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -99,6 +104,7 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
+alias nc='ncat'
 alias rmdir='rm -rf'
 alias cwipe='cliphist wipe'
 alias usb1="sudo mount /dev/sda1 /mnt"
@@ -122,6 +128,7 @@ alias gpl='git pull'
 alias ps1='ps -auxwf'
 alias psg='ps -ef | grep'
 alias dz='aunpack'
+alias pacsize='LC_ALL=C.UTF-8 pacman -Qi | awk '\''/^Name/{name=$3} /^Installed Size/{print $4$5, name}'\'' | LC_ALL=C.UTF-8 sort -h | grep'
 alias pacc='sudo pacman -Scc'
 alias ipv6='cat /proc/sys/net.ipv6/conf/all/disable_ipv6'
 alias ipv6on='sudo sysctl net.ipv6.conf.all.disable_ipv6=0'
@@ -131,3 +138,7 @@ alias nc='netcat'
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 function rmk() { scrub -p dod $1; shred -zun 10 -v $1; }
 function walup() { wal -i "$(find ~/Downloads/w4llp4p3rs -type f -name '*.jpeg' | shuf -n 1)"; }
+function ufwctfon() { sudo ufw allow 1337/tcp && sudo ufw allow 4444/tcp && sudo ufw allow 1194/udp && sudo ufw allow 80/tcp && sudo ufw allow 443/tcp && sudo ufw allow 8080/tcp && sudo ufw reload; }
+function ufwctfoff() { sudo ufw delete allow 1337/tcp && sudo ufw delete allow 4444/tcp && sudo ufw delete allow 1194/udp && sudo ufw delete allow 80/tcp && sudo ufw delete allow 443/tcp && sudo ufw delete allow 8080/tcp && sudo ufw reload; }
+function sshon() { sudo ufw allow 22/tcp; } 
+function sshoff() { sudo ufw deny 22/tcp; }
