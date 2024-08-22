@@ -95,7 +95,7 @@ install_packages virtualbox virtualbox-guest-utils virtualbox-host-modules-arch
 install_packages grim swappy slurp
 
 # Python
-install_packages python-requests python-beautifulsoup4
+install_packages python-requests python-beautifulsoup4 python-pexpect
 
 # Snaps
 yay -S snapd || error_exit "Failed to install Snapd"
