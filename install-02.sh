@@ -33,6 +33,7 @@ yay -S --noconfirm ffuf
 yay -S --noconfirm burpsuite
 yay -S --noconfirm feroxbuster
 yay -S --noconfirm naabu
+yay -S --noconfirm netexec
 
 # Snap
 
