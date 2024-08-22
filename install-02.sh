@@ -34,6 +34,8 @@ yay -S --noconfirm burpsuite
 yay -S --noconfirm feroxbuster
 yay -S --noconfirm naabu
 yay -S --noconfirm netexec
+yay -S --noconfirm ruby-evil-winrm
+
 
 # Snap
 
