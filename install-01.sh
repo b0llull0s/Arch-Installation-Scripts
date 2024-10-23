@@ -22,8 +22,8 @@ enable_services() {
     done
 }
 
-# Remove unnecessary packages
-sudo pacman -Rs --noconfirm dolphin
+# Install Hyprland
+sudo pacman -Sy hyprland ly
 
 # Home directories setup
 mkdir -p ~/Downloads ~/Screenshots || error_exit "Failed to create directories"
@@ -60,7 +60,7 @@ sudo systemctl enable --now paccache.timer || error_exit "Failed to enable pacca
 # packages grouped by category
 
 # Binaries
-install_packages curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils
+install_packages wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils
 
 # Programming & Development
 install_packages python-pip cargo go
@@ -82,26 +82,20 @@ install_packages ranger
 install_packages btop
 
 # Utils
-install_packages waybar python-pywal obsidian signal-desktop bleachbit cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip wine wine-mono wine-gecko net-tools
+install_packages waybar python-pywal obsidian signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools
 
 # Wireshark
 install_packages wireshark-qt
 sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for dumpcap"
 
 # Virtual Box
-install_packages virtualbox virtualbox-guest-utils virtualbox-host-modules-arch
+#install_packages virtualbox virtualbox-guest-utils virtualbox-host-modules-arch
 
 # Screenshots
 install_packages grim swappy slurp
 
 # Python
 install_packages python-requests python-beautifulsoup4 python-pexpect
-
-# Snaps
-yay -S snapd || error_exit "Failed to install Snapd"
-sudo systemctl enable --now snapd.socket
-sudo systemctl enable --now snapd.apparmor.service
-sudo ln -s /var/lib/snapd/snap /snap\n
 
 # Codium
 yay -S vscodium-bin || error_exit "Failed to install Codium"
@@ -130,10 +124,10 @@ yay -S --noconfirm scrub || error_exit "Failed to install scrub"
 yay -S --noconfirm zsh-syntax-highlighting zsh-autosuggestions || error_exit "Failed to install zsh plugins"
 
 # Dot Files
-for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr kitty rofi swappy waybar; do
+for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr rofi swappy waybar; do
     cp -r "$config_dir" ~/.config/ || error_exit "Failed to copy $config_dir"
 done
-cp -r wireshark ~/.config || error_exit "Failed to copy wireshark/profiles"
+
 cp -r wal ~/.config || error_exit "Failed to copy wal/templates"
 
 # Script Permissions
