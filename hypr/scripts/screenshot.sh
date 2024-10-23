@@ -18,7 +18,7 @@ option2="Fullscreen"
 
 options="$option1\n$option2"
 
-choice=$(echo -e "$options" | rofi -dmenu -replace -config ~/.config/rofi/config-screenshot.rasi -i -no-show-icons -l 2 -width 30 -p "Take Screenshot")
+choice=$(echo -e "$options" | wofi --show=dmenu --width 100 --height 85)
 
 case $choice in
     $option1)
