@@ -22,7 +22,7 @@ set_wallpaper() {
 
 # Ask for options
 options=("random" "select")
-selected_option=$(echo -e "1. ${options[0]}\n2. ${options[1]}" |  rofi -dmenu -l 2 -width 30)
+selected_option=$(echo -e "1. ${options[0]}\n2. ${options[1]}" |  wofi --show dmenu --height 100 --width 200)
 # Handle the selected option
 case "$selected_option" in
     "1. random")
@@ -31,8 +31,8 @@ case "$selected_option" in
         set_wallpaper "$WALLPAPER"
         ;;
     "2. select")
-        # Select wallpaper with rofi
-        selected_wallpaper=$(ls -1 "$WALLPAPER_FOLDER" | grep "jpg" | rofi -dmenu -p "Select wallpaper:")
+        # Select wallpaper with wofi
+        selected_wallpaper=$(ls -1 "$WALLPAPER_FOLDER" | grep "jpg" | wofi --show dmenu --height 100 --width 200 -p "Select wallpaper:")
         if [ -z "$selected_wallpaper" ]; then
             echo "No wallpaper selected"
             exit 1
@@ -45,5 +45,3 @@ case "$selected_option" in
         exit 1
         ;;
 esac
-
-exit 0
