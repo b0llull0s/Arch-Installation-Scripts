@@ -12,9 +12,7 @@
 ### Futures features and fixes:
 
 - Randomize and encrypt Signal Keys.
-- Make `wireshark` profiles again.
-- Pywal integration with `Wofi`.
-   
+- Make `wireshark` profiles again.   
 ![Screenshot](screenshot1.png)
 
 ## Details:
