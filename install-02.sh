@@ -24,7 +24,7 @@ enable_services() {
 
 # Packages
 
-install_packages nmap ncat openbsd-netcat mariadb john feroxbuster impacket metasploit john
+install_packages nmap ncat openbsd-netcat mariadb john feroxbuster impacket metasploit
 
 # Yay Packages
 
