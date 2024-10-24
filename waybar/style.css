@@ -12,6 +12,7 @@
 @import "../../.cache/wal/colors-waybar.css";
 /* Basic */
 *{
+    margin-top: 1px;
     border: none;
     border-radius: 0;
     font-family: Cartograph CF Nerd Font, monospace;
