@@ -188,10 +188,10 @@ sudo apparmor_parser /usr/share/apparmor/extra-profiles
 
 ## Tips:
 
-- For safety reasons and live improvement the script doesnt delete kitty, but if you dont need it feel free to remove it yourself.
+- Sometimes you may enconter an error retrieving the `blackarch.db` while updating the system, this error is normally related to a mirror having an expired certificate, simply comment that mirror and uncomment another one
 ```bash
-sudo pacman -Rs kitty
-```
+sudo nano /etc/pacman.d/blackarch-mirrorlist
+``` 
 - In case you need to generate a new `py-wal` template just use the alias `walup`:
 ```bash
 # For a specific file
