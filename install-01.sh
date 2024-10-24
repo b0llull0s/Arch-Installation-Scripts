@@ -63,7 +63,7 @@ sudo systemctl enable --now paccache.timer || error_exit "Failed to enable pacca
 install_packages wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils
 
 # Programming & Development
-install_packages python-pip python-pywal cargo go
+install_packages python-pip cargo go
 
 # Terminals & Shells
 install_packages zsh alacritty
@@ -95,7 +95,7 @@ sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for d
 install_packages grim swappy slurp
 
 # Python
-install_packages python-requests python-beautifulsoup4 python-pexpect
+install_packages python-pywal python-requests python-beautifulsoup4 python-pexpect python-selenium
 
 # Codium
 yay -S vscodium-bin || error_exit "Failed to install Codium"
@@ -106,9 +106,6 @@ yay -S --noconfirm ttf-firacode-nerd || error_exit "Failed to install Fira Code 
 # swww
 yay -S --noconfirm swww || error_exit "Failed to install swww"
 swww-daemon --format xrgb || error_exit "Failed to initialize swww"
-
-# burp
-yay -S --noconfirm burpsuite || error_exit "Failed to install burpsuite"
 
 # librewolf
 yay -S --noconfirm librewolf-bin || error_exit "Failed to install librewolf-bin"
