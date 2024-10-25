@@ -82,7 +82,7 @@ install_packages ranger
 install_packages btop
 
 # Utils
-install_packages waybar obsidian signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools
+install_packages waybar obsidian signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn
 
 # Wireshark
 install_packages wireshark-qt
