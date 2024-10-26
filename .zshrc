@@ -3,8 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export MODULAR_HOME="/home/b0llull0s/.modular"
-export PATH="/home/b0llull0s/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+#export MODULAR_HOME="/home/b0llull0s/.modular"
+#export PATH="/home/b0llull0s/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -75,7 +75,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+#plugins=(git)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
@@ -104,7 +104,6 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
-alias nc='ncat'
 alias rmdir='rm -rf'
 alias cwipe='cliphist wipe'
 alias usb1="sudo mount /dev/sda1 /mnt"
