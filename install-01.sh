@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Functions
-
 error_exit() {
     echo "$1" 1>&2
     exit 1
@@ -49,8 +48,6 @@ sudo pacman -Sy --noconfirm pacman-contrib || error_exit "Failed to install pacm
 
 # PacCache setup
 sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
-
-# packages grouped by category
 
 # Binaries
 install_packages wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh
@@ -130,7 +127,8 @@ wal -i ~/P4n1c-Arch/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
 swww img ~/P4n1c-Arch/w4llp4p3rs/1.jpg
 
 # Zsh
-cp .zshrc ~/ || error_exit "Failed to copy .zshrc"
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+cp "$SCRIPT_DIR/.zshrc" ~/ || error_exit "Failed to copy .zshrc"
 
 # Function to install VirtualBox
 install_virtualbox() {
