@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # Functions
 
@@ -35,12 +34,6 @@ curl -fsSL https://blackarch.org/strap.sh | sudo bash || error_exit "Failed to e
 install_packages ufw
 sudo ufw enable || error_exit "Failed to enable UFW"
 enable_services ufw.service
-
-## Nerdfonts ##
-#git clone https://github.com/ryanoasis/nerd-fonts.git
-#cd nerd-fonts
-#chmod +x install.sh
-#./install.sh
 
 # Yay setup
 install_packages base-devel git
@@ -87,9 +80,6 @@ install_packages waybar obsidian signal-desktop cliphist pam_yubico pam-u2f atoo
 # Wireshark
 install_packages wireshark-qt
 sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for dumpcap"
-
-# Virtual Box
-#install_packages virtualbox virtualbox-guest-utils virtualbox-host-modules-arch
 
 # Screenshots
 install_packages grim swappy slurp
