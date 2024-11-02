@@ -151,7 +151,9 @@ mkdir -p ~/.config/Yubico
 # Now register the hash in the config file
 pamu2fcfg -o pam://me -i pam://me > ~/.config/Yubico/u2f_keys
 ```
-- Now configure `PAM`. **Don't close the `PAM` file until you make it work if you want to avoid pain!!!**
+- Now configure `PAM`. 
+> [CAUTION]
+> **Don't close the `PAM` file until you make it work if you want to avoid pain!!!**
 ```bash
 sudo nano /etc/pam.d/sudo
 ```
