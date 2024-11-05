@@ -137,7 +137,8 @@ alias nc='netcat'
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 function rmk() { scrub -p dod $1; shred -zun 10 -v $1; }
 function walup() { wal -i "$(find ~/Downloads/w4llp4p3rs -type f -name '*.jpeg' | shuf -n 1)"; }
-function ufwctfon() { sudo ufw allow 1337/tcp && sudo ufw allow 4444/tcp && sudo ufw allow 1194/udp && sudo ufw allow 80/tcp && sudo ufw allow 443/tcp && sudo ufw allow 8080/tcp && sudo ufw reload; }
-function ufwctfoff() { sudo ufw delete allow 1337/tcp && sudo ufw delete allow 4444/tcp && sudo ufw delete allow 1194/udp && sudo ufw delete allow 80/tcp && sudo ufw delete allow 443/tcp && sudo ufw delete allow 8080/tcp && sudo ufw reload; }
 function sshon() { sudo ufw allow 22/tcp; } 
 function sshoff() { sudo ufw deny 22/tcp; }
+function box() { [ -z "$1" ] && echo "Usage: box <HTB_IP>" || sudo ufw allow from "$1" to any && echo "Traffic allowed from $1"; }
+function boxd() { [ -z "$1" ] && echo "Usage: boxd <HTB_IP>" || sudo ufw delete allow from "$1" to any && echo "Traffic rule deleted for $1"; }
+
