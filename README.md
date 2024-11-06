@@ -1,7 +1,7 @@
 ## Synopsis:
 
 - `Wayland`, `Hyperland`, `Waybar` riced with `py-wal`
-- Fair amount of aliases and plugins.
+- Fair amount of aliases, functions and plugins.
 - Custom Scripts
 - Yubikey CLI integration for `sudo`.
 - AppArmor enabled.
@@ -11,7 +11,6 @@
   
 ### Futures features and fixes:
 
-- Randomize and encrypt Signal Keys.
 - Make `wireshark` profiles again.
    
 ![Screenshot](screenshot1.png)
@@ -32,23 +31,22 @@
 
 ### Waybar:
 
+- Interactive modules.
 - Custom module to see how many updates are available.
 - Custom module to check and show your public ip.
 - Fully customized style with `pywal` integration and nerdfont icons.
-- Network module opens the `Network.Manager GUI`.
+
   
 ### Additional Packages included:
 
-`pacman-contrib`  `yay`  `atool` `unzip` `zip`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `less`  `tree`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `go`  `pamixer`  `cmus`  `vscodium-bin`  `scrub`  `pam_yubico`  `pam-u2f`  `burpsuite`  `sxiv`  `p7zip`  `wine`  `wine-mono`  `wine-gecko`  `apparmor`  `snapd`  `whois`  `tcpdump`  `net-tools`
+`pacman-contrib`  `yay`  `atool` `unzip` `zip`  `exa`  `bat`  `ufw`  `wireshark`  `bleachbit`  `virtualbox`  `obsidian`  `nordvpn`  `signal`  `btop`  `wget`  `curl`  `less`  `tree`  `locate`  `qflipper`  `neofetch`  `python`  `rust`  `go`  `pamixer`  `cmus`  `vscodium-bin`  `scrub`  `pam_yubico`  `pam-u2f`  `burpsuite`  `sxiv`  `p7zip`  `apparmor`  `whois`  `tcpdump`  `net-tools`
 
 ### Zsh Plugings, Aliases and Functions:
 
-- `Ohmyzsh` and `pywal` integration.
-- Some handy aliases to use `systemctl` and your system in general.
-- `Git` pluging and most useful aliases.
-- `Cheat.sh` implemented on a function to use as `cheat <argument>`
-- Safe deletion of files using `scrup` and `schred` on a funtion to use as `rmk <argument>`
-- Some `zsh` plugins.
+- `ohmyzsh` and `pywal` integration.
+-  Many handy aliases and functions.
+- `cheat.sh` implemented on a function to use as `cheat <argument>`
+- `zsh` plugins.
 
 ### Custom Scripts:
 
@@ -61,13 +59,11 @@
 
 - `yubikey` integration for passwordless `sudo`.
 - `blackarch` library.
-- `wireshark` profiles.
 - `AppArmor` profiles.
-- Encyptation `signal` keys.
 
 ## Installation:
 
-- Make you sure you have a `USB` ready to use with a verified Arch `ISO`
+- Make sure you have a `USB` ready to use with a verified Arch `ISO`
 - You can use `rufus` or `dd` command in linux:
 ```bash
 # Lookup for your USB drive
@@ -220,6 +216,10 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 - I dont use `xwayland` but in case you do, the `env` paths are commented on `hyprland.conf`.
 - At some point your pacman cache may grow more than it should, clear old libraries and cache to release space
 ```sh
+sudo pacman -Scc
+```
+- You can also use this command to delete core dump files
+```sh
 find / -xdev -name core -ls -o  -path "/lib*" -prune
 ```
 
@@ -228,7 +228,7 @@ find / -xdev -name core -ls -o  -path "/lib*" -prune
 | Combination                          | Action                  |
 |--------------------------------------|-------------------------|
 | `Super + RIGHT CLICK`                | Resize Window           |
-| `ALT + LEFT CLICK`                   | Drag Window             |
+| `Super + LEFT CLICK`                 | Drag Window             |
 
 ## Key Bindings:
 
@@ -250,10 +250,8 @@ find / -xdev -name core -ls -o  -path "/lib*" -prune
 | `Super + [PRINTSCRN]`                | Screenshot              |
 | `Super + C`                          | Codium                  |
 | `Super + M`                          | Obsidian                |
-| `Super + X`                          | codium .config           |
 | `Super + Z`                          | codium .zshsrc          |
 | `Super + S`                          | Signal                  |
-| `Super + W`                          | Wireshark               |
 | `Super + B`                          | Reset waybar            |
 | `Super + N`                          | Changes theme           |
 | `Super + Q`                          | Volume Up               |
