@@ -223,9 +223,9 @@ sudo pacman -Scc
 find / -xdev -name core -ls -o  -path "/lib*" -prune
 ```
 > [!CAUTION]
-> Currently Virtualbox Can't Use Fullscreen Mode On Wayland by default.
-> To fix this, go to "User Interface" on the "Settings" from your VM and uncheck "Show in Full-screen/Seamless".
-> This shoud fix the issue, after just adapt the display resolution inside the VM to match the size you are using with your compositor.
+>- Currently Virtualbox Can't Use Fullscreen Mode On Wayland by default.
+>- To fix this, go to "User Interface" on the "Settings" from your VM and uncheck "Show in Full-screen/Seamless".
+>- This shoud fix the issue, after just adapt the display resolution inside the VM to match the size you are using with your compositor.
 ## Mouse Bindings:
 
 | Combination                          | Action                  |
