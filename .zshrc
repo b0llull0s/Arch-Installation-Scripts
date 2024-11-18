@@ -151,6 +151,7 @@ alias ipv6='cat /proc/sys/net.ipv6/conf/all/disable_ipv6'
 alias ipv6on='sudo sysctl net.ipv6.conf.all.disable_ipv6=0'
 alias ipv6off='sudo sysctl net.ipv6.conf.all.disable_ipv6=1'
 alias nc='netcat'
+alias http="python3 -m http.server"
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 function rmk() { scrub -p dod $1; shred -zun 10 -v $1; }
