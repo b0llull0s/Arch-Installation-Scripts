@@ -110,7 +110,7 @@ window#waybar {
 #battery {
     color: @color12;
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
     border-left: 0px;
 }
 #cpu {
