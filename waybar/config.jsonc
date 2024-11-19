@@ -34,6 +34,7 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
+        "custom/cmus",
         "battery",
         "pulseaudio",
         "custom/updates",
@@ -123,7 +124,8 @@
         "interval": 30,
         "format": "󰯙 {used:0.1f}G 󰮇",
         "max-length": 10,
-        "tooltip-format": "{percentage}% {total}G"
+        "tooltip-format": "{percentage}% {total}G",
+        "on-click": "alacritty -e btop"
     },
     "disk": {
         "interval": 30,
@@ -154,7 +156,6 @@
     "interval": 7200,                     // every two hours
     "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'",       // # of updates and tooltip details
     "exec-if": "exit 0",                  // always run; consider advanced run conditions
-    "on-click": "kitty -e sudo pacman -Syu", // update system
     "signal": 8
 },
 // VPN
@@ -162,5 +163,11 @@
     "format": " {} 󰠥",
     "exec": "curl -s www.icanhazip.com",
     "interval": 30
+},
+// cmus-status
+"custom/cmus": {
+    "exec": "~/.config/hypr/scripts/cmus-status.sh",
+    "format": "󰝚 {} ",
+    "on-click": "cmus"
 }
 }
