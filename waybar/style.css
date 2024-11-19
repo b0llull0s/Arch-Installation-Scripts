@@ -53,6 +53,7 @@ window#waybar {
 #disk,
 #custom-updates,
 #custom-vpn,
+#custom-cmus,
 #clock,
 #battery,
 #pulseaudio,
@@ -125,6 +126,12 @@ window#waybar {
 }
 #disk {
     color: @color4;
+    border-radius: 10px;
+    margin-right: 5px;
+    border-left: 0px;
+}
+#custom-cmus {
+    color: @color5;
     border-radius: 10px;
     margin-right: 5px;
     border-left: 0px;
