@@ -20,13 +20,13 @@
 @import "../../.cache/wal/colors-waybar.css";
 /* Basic */
 *{
-    margin-top: 1px;
     border: none;
     border-radius: 0;
     font-family: Cartograph CF Nerd Font, monospace;
     font-weight: bold;
     font-size: 15px;
     min-height: 0;
+    padding: 1px;
 }
 /* Bar */
 window#waybar {
@@ -34,9 +34,8 @@ window#waybar {
 }
 /* Workspaces */
 #workspaces button {
-    /*padding: 5px;*/
+    padding: 3px;
     color: @color2;
-    /*margin-right: 5px;*/
 }
 
 #workspaces button.active {
@@ -104,7 +103,6 @@ window#waybar {
     border-radius: 10px;
     border-left: 0px;
     border-right: 0px;
-    margin-left: 5px;
 }
 
 #battery {
