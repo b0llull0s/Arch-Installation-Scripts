@@ -3,8 +3,8 @@
 - `Wayland`, `Hyperland`, `Waybar` riced with `py-wal`
 - Fair amount of aliases, functions and plugins.
 - Custom Scripts
-- Yubikey CLI integration for `sudo`.
-- AppArmor enabled.
+- `Yubikey CLI` integration for `sudo`.
+- `AppArmor` enabled.
 - Unlocks `blackarch` library.
 - Bare metal only.
 - Uses dark theme.
@@ -34,6 +34,7 @@
 - Interactive modules.
 - Custom module to see how many updates are available.
 - Custom module to check and show your public ip.
+- Cusrom module to display `cmus` status.
 - Fully customized style with `pywal` integration and nerdfont icons.
 
   
@@ -54,6 +55,7 @@
 - Theme Change.
 - Screenshot and edition.
 - Cache management.
+- Cmus Status for Waybar
 
 ### Cybersecurity features:
 
