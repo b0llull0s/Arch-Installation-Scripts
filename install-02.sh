@@ -40,7 +40,7 @@ enable_services() {
 
 # Packages
 
-install_packages nmap ncat openbsd-netcat mariadb john feroxbuster impacket metasploit
+install_packages nmap ncat openbsd-netcat mariadb john feroxbuster impacket metasploit exploitdb
 
 # Yay Packages
 
@@ -50,3 +50,4 @@ yay -S --noconfirm burpsuite
 yay -S --noconfirm naabu
 yay -S --noconfirm netexec
 yay -S --noconfirm ruby-evil-winrm
+yay -S --noconfirm gobuster
