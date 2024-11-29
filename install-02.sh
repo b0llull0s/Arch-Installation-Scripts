@@ -51,3 +51,4 @@ yay -S --noconfirm naabu
 yay -S --noconfirm netexec
 yay -S --noconfirm ruby-evil-winrm
 yay -S --noconfirm gobuster
+yay -S --noconfirm smbmap
