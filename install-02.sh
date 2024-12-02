@@ -40,7 +40,7 @@ enable_services() {
 
 # Packages
 
-install_packages nmap ncat openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb oath-toolkit bind
+install_packages nmap ncat openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb oath-toolkit bind sqlmap
 
 # Yay Packages
 
