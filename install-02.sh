@@ -39,8 +39,10 @@ enable_services() {
 }
 
 # Packages
+install_packages nmap ncat openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb proxychains-ng oath-toolkit bind sqlmap
+# Python
+install_packages python-pwntools 
 
-install_packages nmap ncat openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb oath-toolkit bind sqlmap
 
 # Yay Packages
 
