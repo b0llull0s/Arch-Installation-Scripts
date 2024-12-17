@@ -39,9 +39,9 @@ enable_services() {
 }
 
 # Packages
-install_packages nmap ncat openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb proxychains-ng oath-toolkit bind sqlmap
+install_packages nmap ncat openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb proxychains-ng oath-toolkit bind sqlmap wpscan
 # Python
-install_packages python-pwntools 
+install_packages python-pwntools python-aiosmtpd python-websocket-client python-bs4
 
 
 # Yay Packages
@@ -54,3 +54,4 @@ yay -S --noconfirm netexec
 yay -S --noconfirm ruby-evil-winrm
 yay -S --noconfirm gobuster
 yay -S --noconfirm smbmap
+yay -S --noconfirm whatweb
