@@ -97,33 +97,26 @@ sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for d
 
 # Screenshots
 install_packages grim swappy slurp
-
 # Python
 install_packages python-pywal python-requests python-beautifulsoup4 python-pexpect python-selenium
-
+# Hypr-qtutils
+yay -S hyprland-qtutils || error_exit "Failed to install Hyprland-qtutils"
 # Codium
 yay -S vscodium-bin || error_exit "Failed to install Codium"
-
 # Fira Code Nerd
 yay -S --noconfirm ttf-firacode-nerd || error_exit "Failed to install Fira Code Nerd"
-
 # swww
 yay -S --noconfirm swww || error_exit "Failed to install swww"
 swww-daemon --format xrgb || error_exit "Failed to initialize swww"
-
 # librewolf
 yay -S --noconfirm librewolf-bin || error_exit "Failed to install librewolf-bin"
-
 # nordvpn
 yay -S --noconfirm nordvpn-bin || error_exit "Failed to install nordvpn-bin"
 sudo systemctl enable --now nordvpnd || error_exit "Failed to enable nordvpnd"
-
 # scrub
 yay -S --noconfirm scrub || error_exit "Failed to install scrub"
-
 # zsh plugins
 yay -S --noconfirm zsh-syntax-highlighting zsh-autosuggestions || error_exit "Failed to install zsh plugins"
-
 # Dot Files
 for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr rofi swappy waybar; do
     cp -r "$config_dir" ~/.config/ || error_exit "Failed to copy $config_dir"
