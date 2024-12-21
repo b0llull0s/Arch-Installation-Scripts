@@ -23,9 +23,12 @@
 export ZSH="$HOME/.oh-my-zsh"
 #export MODULAR_HOME="/home/b0llull0s/.modular"
 #export PATH="/home/b0llull0s/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
-# export NVM_DIR="$HOME/.nvm"
+#export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# Add Ruby gem binaries to PATH
+export PATH="$HOME/.local/share/gem/ruby/3.3.0/bin:$PATH"
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -160,4 +163,3 @@ function sshon() { sudo ufw allow 22/tcp; }
 function sshoff() { sudo ufw deny 22/tcp; }
 function box() { [ -z "$1" ] && echo "Usage: box <HTB_IP>" || sudo ufw allow from "$1" to any && echo "Traffic allowed from $1"; }
 function boxd() { [ -z "$1" ] && echo "Usage: boxd <HTB_IP>" || sudo ufw delete allow from "$1" to any && echo "Traffic rule deleted for $1"; }
-
