@@ -56,3 +56,4 @@ yay -S --noconfirm gobuster
 yay -S --noconfirm smbmap
 yay -S --noconfirm whatweb
 yay -S --noconfirm steghide
+yay -S --noconfirm gowitness
