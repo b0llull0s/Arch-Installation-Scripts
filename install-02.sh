@@ -39,7 +39,7 @@ enable_services() {
 }
 
 # Packages
-install_packages nmap ncat openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb proxychains-ng oath-toolkit bind sqlmap wpscan
+install_packages nmap ncat openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb proxychains-ng oath-toolkit bind sqlmap wpscan sqlite
 # Python
 install_packages python-pwntools python-aiosmtpd python-websocket-client python-bs4
 
