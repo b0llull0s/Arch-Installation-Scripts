@@ -67,7 +67,7 @@ sudo pacman -Sy --noconfirm pacman-contrib || error_exit "Failed to install pacm
 sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
 
 # Binaries
-install_packages wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof
+install_packages wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd
 
 # Programming & Development
 install_packages python-pip cargo go tk geckodriver
