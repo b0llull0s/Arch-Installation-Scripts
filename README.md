@@ -122,8 +122,6 @@ nmcli device wifi connect SSID_or_BSSID password password hidden yes
 - And download this repository:
 ```bash
 git clone https://github.com/b0llull0s/Arch-Installation-Script.git
-cd ~/P4nic-Arch
-chmod +x *.sh
 ```
 - Some application doesnt accept relatives paths and you will have to change those to your own home folder.
 - You may also want to create a new directory with your desired profile name on `Wireshark/profile` and move the files inside.
