@@ -88,6 +88,10 @@ station wlan0 get-networks
 # Connect to a network
 station wlan0 connect networkname
 ```
+- First, update the `keyring` to avoid issues:
+```
+pacman -Sy archlinux-keyring
+```
 - Just run the `archinstall` script. This are the only relevant steps that you need to follow for this build:
   - Use `ext4` file type for your system.
   - `Systemd-bootloader` can give you problems with encryptation, in that case just use `GRUB`
@@ -254,11 +258,11 @@ find / -xdev -name core -ls -o  -path "/lib*" -prune
 | `Super + U`                          | Full screen             |
 | `Super + [PRINTSCRN]`                | Screenshot              |
 | `Super + C`                          | Codium                  |
-| `Super + M`                          | Obsidian                |
+| `Super + N`                          | Obsidian                |
 | `Super + Z`                          | codium .zshsrc          |
 | `Super + S`                          | Signal                  |
 | `Super + B`                          | Reset waybar            |
-| `Super + N`                          | Changes theme           |
+| `Super + W`                          | Changes theme           |
 | `Super + Q`                          | Volume Up               |
 | `Super + A`                          | Volume Down             |
 | `Super + R`                          | Clear cache             |
