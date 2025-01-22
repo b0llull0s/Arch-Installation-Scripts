@@ -94,7 +94,6 @@ install_packages waybar obsidian signal-desktop cliphist pam_yubico pam-u2f atoo
 # Wireshark
 install_packages wireshark-qt
 sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for dumpcap"
-
 # Screenshots
 install_packages grim swappy slurp
 # Python
@@ -107,39 +106,29 @@ yay -S vscodium-bin || error_exit "Failed to install Codium"
 yay -S --noconfirm ttf-firacode-nerd || error_exit "Failed to install Fira Code Nerd"
 # swww
 yay -S --noconfirm swww || error_exit "Failed to install swww"
-swww-daemon --format xrgb || error_exit "Failed to initialize swww"
 # librewolf
 yay -S --noconfirm librewolf-bin || error_exit "Failed to install librewolf-bin"
-# nordvpn
-yay -S --noconfirm nordvpn-bin || error_exit "Failed to install nordvpn-bin"
-sudo systemctl enable --now nordvpnd || error_exit "Failed to enable nordvpnd"
 # scrub
 yay -S --noconfirm scrub || error_exit "Failed to install scrub"
 # zsh plugins
 yay -S --noconfirm zsh-syntax-highlighting zsh-autosuggestions || error_exit "Failed to install zsh plugins"
 # Dot Files
-for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr rofi swappy waybar; do
+for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr swappy waybar; do
     cp -r "$config_dir" ~/.config/ || error_exit "Failed to copy $config_dir"
 done
 
 cp -r wal ~/.config || error_exit "Failed to copy wal/templates"
-
 # Script Permissions
 sudo chmod +x ~/.config/hypr/scripts/*.sh || error_exit "Failed to change script permissions"
-
 # OMZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || error_exit "Failed to install oh-my-zsh"
-
 # Set pywal
-wal -i ~/P4n1c-Arch/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
-
+wal -i ~/Arch-Installation-Script/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
 # Set Wallpaper
-swww img ~/P4n1c-Arch/w4llp4p3rs/1.jpg
-
+swww img ~/Arch-Installation-Script/w4llp4p3rs/1.jpg
 # Zsh
 SCRIPT_DIR=$(dirname "$(realpath "$0")")
 cp "$SCRIPT_DIR/.zshrc" ~/ || error_exit "Failed to copy .zshrc"
-
 # Function to install VirtualBox
 install_virtualbox() {
     echo "Installing VirtualBox host modules..."
