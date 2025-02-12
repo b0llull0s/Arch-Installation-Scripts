@@ -67,13 +67,12 @@ sudo pacman -Sy --noconfirm pacman-contrib || error_exit "Failed to install pacm
 sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
 
 # Binaries
-install_packages wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd
+install_packages zsh alacritty wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd
 
 # Programming & Development
-install_packages python-pip cargo go tk geckodriver
-
-# Terminals & Shells
-install_packages zsh alacritty
+install_packages cargo go tk geckodriver
+# Python
+install_packages python-pip python-pywal python-requests python-beautifulsoup4 python-pexpect python-selenium
 
 # Sound
 install_packages cmus pamixer pavucontrol
@@ -82,22 +81,17 @@ install_packages cmus pamixer pavucontrol
 install_packages blueman bluez bluez-utils
 enable_services bluetooth
 
-# File Managers
-install_packages ranger
-
-# Task Manager
-install_packages btop
-
 # Utils
-install_packages waybar obsidian signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn jq obs xdg-desktop-portal-hyprland
+install_packages waybar ranger btop obsidian signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn jq obs xdg-desktop-portal-hyprland
 
 # Wireshark
 install_packages wireshark-qt
 sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for dumpcap"
+
 # Screenshots
 install_packages grim swappy slurp
-# Python
-install_packages python-pywal python-requests python-beautifulsoup4 python-pexpect python-selenium
+
+# Yay Packages 
 # Hypr-qtutils
 yay -S hyprland-qtutils || error_exit "Failed to install Hyprland-qtutils"
 # Codium
@@ -112,23 +106,30 @@ yay -S --noconfirm librewolf-bin || error_exit "Failed to install librewolf-bin"
 yay -S --noconfirm scrub || error_exit "Failed to install scrub"
 # zsh plugins
 yay -S --noconfirm zsh-syntax-highlighting zsh-autosuggestions || error_exit "Failed to install zsh plugins"
+
 # Dot Files
 for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr swappy waybar; do
     cp -r "$config_dir" ~/.config/ || error_exit "Failed to copy $config_dir"
 done
 
 cp -r wal ~/.config || error_exit "Failed to copy wal/templates"
+
 # Script Permissions
 sudo chmod +x ~/.config/hypr/scripts/*.sh || error_exit "Failed to change script permissions"
+
 # OMZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || error_exit "Failed to install oh-my-zsh"
+
 # Set pywal
 wal -i ~/Arch-Installation-Script/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
+
 # Set Wallpaper
 swww img ~/Arch-Installation-Script/w4llp4p3rs/1.jpg
-# Zsh
+
+# .zshsrc
 SCRIPT_DIR=$(dirname "$(realpath "$0")")
 cp "$SCRIPT_DIR/.zshrc" ~/ || error_exit "Failed to copy .zshrc"
+
 # Function to install VirtualBox
 install_virtualbox() {
     echo "Installing VirtualBox host modules..."
