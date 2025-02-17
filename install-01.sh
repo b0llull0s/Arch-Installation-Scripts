@@ -82,7 +82,7 @@ install_packages blueman bluez bluez-utils
 enable_services bluetooth
 
 # Utils
-install_packages waybar ranger btop obsidian signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn jq obs xdg-desktop-portal-hyprland
+install_packages waybar ranger btop obsidian signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn jq obs xdg-desktop-portal-hyprland lutris
 
 # Wireshark
 install_packages wireshark-qt
