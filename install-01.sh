@@ -31,6 +31,14 @@ install_packages() {
     done
 }
 
+install_packages_yay() {
+    for package in "$@"; do
+        if ! yay -Q "$package" &>/dev/null; then
+            yay -Sy --noconfirm "$package" || error_exit "Failed to install $package"
+        fi
+    done
+}
+
 enable_services() {
     for service in "$@"; do
         sudo systemctl enable --now "$service" || error_exit "Failed to enable $service"
@@ -92,20 +100,7 @@ sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for d
 install_packages grim swappy slurp
 
 # Yay Packages 
-# Hypr-qtutils
-yay -S hyprland-qtutils || error_exit "Failed to install Hyprland-qtutils"
-# Codium
-yay -S vscodium-bin || error_exit "Failed to install Codium"
-# Fira Code Nerd
-yay -S --noconfirm ttf-firacode-nerd || error_exit "Failed to install Fira Code Nerd"
-# swww
-yay -S --noconfirm swww || error_exit "Failed to install swww"
-# librewolf
-yay -S --noconfirm librewolf-bin || error_exit "Failed to install librewolf-bin"
-# scrub
-yay -S --noconfirm scrub || error_exit "Failed to install scrub"
-# zsh plugins
-yay -S --noconfirm zsh-syntax-highlighting zsh-autosuggestions || error_exit "Failed to install zsh plugins"
+install_packages_yay ttf-firacode-nerd hyprland-qtutils swww vscodium-bin librewolf-bin scrub zsh-syntax-highlighting zsh-autosuggestions 
 
 # Dot Files
 for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr swappy waybar; do
