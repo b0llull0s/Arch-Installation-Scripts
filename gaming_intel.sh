@@ -21,6 +21,5 @@ install_packages lutris wine winetricks lib32-vkd3d umu-launcher lib32-vulkan-ic
 # gvfs - GVFS backend
 # innoextract - Extract Inno Setup installers
 # lib32-gamemode - Allows games to request a temporary set of optimisations
-# libayatana-appindicator - tray icon support
 # xorg-xgamma - Restore gamma on game exit
 # lib32-libglvnd lib32-gnutls
