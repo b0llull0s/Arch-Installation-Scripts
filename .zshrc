@@ -163,3 +163,4 @@ function sshon() { sudo ufw allow 22/tcp; }
 function sshoff() { sudo ufw deny 22/tcp; }
 function box() { [ -z "$1" ] && echo "Usage: box <HTB_IP>" || sudo ufw allow from "$1" to any && echo "Traffic allowed from $1"; }
 function boxd() { [ -z "$1" ] && echo "Usage: boxd <HTB_IP>" || sudo ufw delete allow from "$1" to any && echo "Traffic rule deleted for $1"; }
+function randomchar() { < /dev/urandom tr -dc 'A-Za-z0-9' | head -c "$1"; echo; }
