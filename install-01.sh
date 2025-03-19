@@ -77,6 +77,9 @@ sudo systemctl enable --now paccache.timer || error_exit "Failed to enable pacca
 # Binaries
 install_packages zsh alacritty wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd
 
+# Qt5
+install_packages qt5-wayland
+
 # Programming & Development
 install_packages cargo go tk geckodriver
 # Python
