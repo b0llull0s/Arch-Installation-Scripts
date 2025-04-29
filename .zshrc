@@ -125,9 +125,10 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
+alias pacinfo='grep 'installed' /var/log/pacman.log | grep -v 'upgraded' | sort'
 alias rmdir='rm -rf'
 alias cwipe='cliphist wipe'
-alias usb1="sudo mount /dev/sda1 /mnt"
+alias usb1="sudo mount /dev/sdd1 /mnt"
 alias pac="sudo pacman -S"
 alias wclass="xprop | grep 'CLASS'"
 alias syst='systemctl status'
