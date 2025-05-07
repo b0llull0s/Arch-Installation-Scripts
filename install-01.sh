@@ -75,7 +75,7 @@ sudo pacman -Sy --noconfirm pacman-contrib || error_exit "Failed to install pacm
 sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
 
 # Binaries
-install_packages zsh alacritty wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd
+install_packages zsh alacritty wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd tinyxxd
 
 # Qt5
 install_packages qt5-wayland
