@@ -51,7 +51,7 @@
 - Screenshot and edition.
 - Cache management.
 - Cmus Status for Waybar
-- Spawn floating windows in the cursor position (`Alacritty`,`xpad` and `Youtube-Music`)
+- Spawn floating windows on the cursor position (`Alacritty`,`xpad` and `Youtube-Music`)
 ### Cybersecurity features:
 
 - `yubikey` integration for passwordless `sudo`.
