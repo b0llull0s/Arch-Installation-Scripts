@@ -253,7 +253,6 @@ find / -xdev -name core -ls -o  -path "/lib*" -prune
 - Credit to **_Stephan Raabe_** for the base idea behind the custom scripts and all the `pywal` integration without his youtube channel would have been way harder.
 - Credit to **_s4vitar_** for the `rmk` function.
 - Credit to the **_annonymous_** user who posted the `waybar` custom module to see your public ip.
-- Credit to **_@PenAce_** for the `wireshark` profiles taken from his awesome video.
 - Credit to **_Alan Moore_** and **_Dave Gibbons_** for `image1` and The band **_Sleep_** for `image2`
 - Wallpaper by **_Wenqing Yan_**. ;) 
 
