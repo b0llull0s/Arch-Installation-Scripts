@@ -1,18 +1,13 @@
 ## Synopsis:
 
 - `Wayland`, `Hyperland`, `Waybar` riced with `py-wal`
-- Fair amount of aliases, functions and plugins.
+- Custom aliases and functions.
 - Custom Scripts
 - `Yubikey CLI` integration for `sudo`.
 - `AppArmor` enabled.
 - Unlocks `blackarch` library.
-- Bare metal only.
 - Uses dark theme.
   
-### Futures features and fixes:
-
-- Make `wireshark` profiles again.
-   
 ![Screenshot](screenshot1.png)
 
 ## Details:
@@ -32,10 +27,10 @@
 ### Waybar:
 
 - Interactive modules.
-- Custom module to see how many updates are available.
-- Custom module to check and show your public ip.
-- Cusrom module to display `cmus` status.
-- Fully customized style with `pywal` integration and nerdfont icons.
+- Custom module to see available updates.
+- Custom module that shows your public ip.
+- Custom module to display `cmus` status.
+- Fully `pywal` integration with nerdfont icons.
 
   
 ### Additional Packages included:
@@ -45,7 +40,7 @@
 ### Zsh Plugings, Aliases and Functions:
 
 - `ohmyzsh` and `pywal` integration.
--  Many handy aliases and functions.
+-  Handy aliases and functions.
 - `cheat.sh` implemented on a function to use as `cheat <argument>`
 - `zsh` plugins.
 
@@ -56,7 +51,7 @@
 - Screenshot and edition.
 - Cache management.
 - Cmus Status for Waybar
-
+- Spawn floating windows in the cursor position (`Alacritty`,`xpad` and `Youtube-Music`)
 ### Cybersecurity features:
 
 - `yubikey` integration for passwordless `sudo`.
@@ -228,7 +223,7 @@ find / -xdev -name core -ls -o  -path "/lib*" -prune
 | Combination                          | Action                  |
 |--------------------------------------|-------------------------|
 | `Super + Enter`                      | Alacritty               |
-| `Super + F`                          | Librewolf               |
+| `Super + E`                          | Librewolf               |
 | `Super + K`                          | Kill Window             |
 | `Super + D`                          | Wofi                     |
 | `Super + [1-9]`                      | Switch Workspace        |
@@ -242,15 +237,15 @@ find / -xdev -name core -ls -o  -path "/lib*" -prune
 | `Super + U`                          | Full screen             |
 | `Super + [PRINTSCRN]`                | Screenshot              |
 | `Super + C`                          | Codium                  |
-| `Super + N`                          | Obsidian                |
-| `Super + Z`                          | codium .zshsrc          |
+| `Super + F`                          | Obsidian                |
 | `Super + S`                          | Signal                  |
 | `Super + B`                          | Reset waybar            |
 | `Super + W`                          | Changes theme           |
 | `Super + Q`                          | Volume Up               |
 | `Super + A`                          | Volume Down             |
 | `Super + R`                          | Clear cache             |
-| `Super + E`                          | Clear cache Hard        |
+| `Super + M`                          | Youtube-Music           |
+| `Super + N`                          | Xpad                    |
 | `Super + V`                          | Clipboard               |
 
 ## Credits and appreciations 
