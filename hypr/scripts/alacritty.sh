@@ -22,8 +22,8 @@ CURSOR_POS=$(hyprctl cursorpos | tr -d ',')
 CURSOR_X=$(echo "$CURSOR_POS" | awk '{print $1}')
 CURSOR_Y=$(echo "$CURSOR_POS" | awk '{print $2}')
 
-X_OFFSET=-0  # Adjust based on xpad width
-Y_OFFSET=0  # Adjust based on xpad height
+X_OFFSET=-300  # Adjust based on xpad width
+Y_OFFSET=-300  # Adjust based on xpad height
 
 FINAL_X=$((CURSOR_X + X_OFFSET))
 FINAL_Y=$((CURSOR_Y + Y_OFFSET))
