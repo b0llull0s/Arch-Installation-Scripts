@@ -83,7 +83,7 @@ install_packages qt5-wayland
 # Programming & Development
 install_packages cargo go tk geckodriver
 # Python
-install_packages python-pip python-pywal python-requests python-beautifulsoup4 python-pexpect python-selenium
+install_packages python-pip python-pywal
 
 # Sound
 install_packages cmus pamixer pavucontrol
