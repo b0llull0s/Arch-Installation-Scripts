@@ -17,7 +17,6 @@
 #  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\  /\_/\ 
 # ( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )
 #  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ < 
-# Functions
 
 error_exit() {
     echo "$1" 1>&2
@@ -32,6 +31,14 @@ install_packages() {
     done
 }
 
+install_packages_yay() {
+    for package in "$@"; do
+        if ! yay -Q "$package" &>/dev/null; then
+            yay -Sy --noconfirm "$package" || error_exit "Failed to install $package"
+        fi
+    done
+}
+
 enable_services() {
     for service in "$@"; do
         sudo systemctl enable --now "$service" || error_exit "Failed to enable $service"
@@ -39,21 +46,13 @@ enable_services() {
 }
 
 # Packages
-install_packages nmap openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb proxychains-ng oath-toolkit bind sqlmap wpscan sqlite chromium tftp-hpa
+install_packages qflipper-bin nmap openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb proxychains-ng oath-toolkit bind sqlmap wpscan sqlite chromium tftp-hpa zaproxy hashcat
+
 # Python
 install_packages python-pwntools python-aiosmtpd python-websocket-client python-bs4 python-requests python-beautifulsoup4 python-pexpect python-selenium
-# Go packages
+
+# Go 
 go install github.com/sensepost/gowitness@latest
+
 # Yay Packages
-yay -S --noconfirm rustscan
-yay -S --noconfirm ffuf
-yay -S --noconfirm burpsuite
-yay -S --noconfirm naabu
-yay -S --noconfirm netexec
-yay -S --noconfirm ruby-evil-winrm
-yay -S --noconfirm gobuster
-yay -S --noconfirm smbmap
-yay -S --noconfirm whatweb
-yay -S --noconfirm steghide
-yay -S --noconfirm pince
-yay -S --noconfirm caido-desktop
+install_packages_yay ffuf gobuster burpsuite smbmap naabu netexec ruby-evil-winrm whatweb steghide pince caido-desktop rustscan 
