@@ -81,9 +81,7 @@ install_packages zsh alacritty wofi curl wget locate less tree neofetch exa bat 
 install_packages qt5-wayland
 
 # Programming & Development
-install_packages cargo go tk geckodriver
-# Python
-install_packages python-pip python-pywal
+install_packages cargo go tk geckodriver python-pip python-pywal
 
 # Sound
 install_packages cmus pamixer pavucontrol
