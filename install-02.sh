@@ -41,7 +41,7 @@ enable_services() {
 # Packages
 install_packages nmap openbsd-netcat rlwrap mariadb john feroxbuster impacket metasploit exploitdb proxychains-ng oath-toolkit bind sqlmap wpscan sqlite chromium tftp-hpa
 # Python
-install_packages python-pwntools python-aiosmtpd python-websocket-client python-bs4
+install_packages python-pwntools python-aiosmtpd python-websocket-client python-bs4 python-requests python-beautifulsoup4 python-pexpect python-selenium
 # Go packages
 go install github.com/sensepost/gowitness@latest
 # Yay Packages
