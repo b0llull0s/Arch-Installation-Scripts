@@ -93,7 +93,7 @@ install_packages blueman bluez bluez-utils
 enable_services bluetooth
 
 # Utils
-install_packages waybar ranger btop obsidian signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn jq obs xdg-desktop-portal-hyprland lutris
+install_packages waybar ranger btop obsidian signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn proton-vpn-gtk-app jq obs xdg-desktop-portal-hyprland gimp blender steam timeshift
 
 # Wireshark
 install_packages wireshark-qt
@@ -103,7 +103,7 @@ sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for d
 install_packages grim swappy slurp
 
 # Yay Packages 
-install_packages_yay ttf-firacode-nerd hyprland-qtutils swww vscodium-bin librewolf-bin scrub zsh-syntax-highlighting zsh-autosuggestions xpad youtube-music-bin
+install_packages_yay ttf-firacode-nerd hyprland-qtutils swww vscodium-bin librewolf-bin scrub zsh-syntax-highlighting zsh-autosuggestions xpad youtube-music-bin cursor-bin
 
 # Dot Files
 for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr swappy waybar; do
