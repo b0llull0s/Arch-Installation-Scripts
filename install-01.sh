@@ -75,13 +75,13 @@ sudo pacman -Sy --noconfirm pacman-contrib || error_exit "Failed to install pacm
 sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
 
 # Binaries
-install_packages zsh alacritty wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd tinyxxd cmake
+install_packages zsh alacritty wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd tinyxxd 
 
 # Qt
 install_packages qt5-wayland qt6-base qt6-tools qtcreator
 
 # Programming & Development
-install_packages cargo go tk geckodriver python-pip python-pywal
+install_packages cargo go tk geckodriver python-pip python-pywal ncurses cmake
 
 # Sound
 install_packages cmus pamixer pavucontrol
