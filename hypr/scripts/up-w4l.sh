@@ -53,3 +53,4 @@ case "$selected_option" in
         exit 1
         ;;
 esac
+pywalfox update
