@@ -101,7 +101,7 @@ sudo chmod +x /usr/bin/dumpcap || error_exit "Failed to change permissions for d
 install_packages grim swappy slurp
 
 # Yay Packages 
-install_packages_yay ttf-firacode-nerd hyprland-qtutils swww vscodium-bin librewolf-bin scrub zsh-syntax-highlighting zsh-autosuggestions xpad youtube-music-bin cursor-bin
+install_packages_yay ttf-firacode-nerd hyprland-qtutils swww vscodium-bin librewolf-bin scrub zsh-syntax-highlighting zsh-autosuggestions xpad youtube-music-bin cursor-bin python-pywalfox-librewolf
 
 # Dot Files
 for config_dir in alacritty btop gtk-3.0 gtk-4.0 hypr swappy waybar; do
