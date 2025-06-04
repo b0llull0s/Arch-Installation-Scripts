@@ -157,6 +157,7 @@ alias http="python3 -m http.server"
 alias hypr="codium ~/.config/hypr/hyprland.conf"
 alias zshsrc="codium ~/.zshrc"
 alias htb="sudo openvpn ~/Documents/CTF/HTB/lab_b4ndit23.ovpn"
+alias android-studio='QT_QPA_PLATFORM=xcb android-studio'
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 function rmk() { scrub -p dod $1; shred -zun 10 -v $1; }
