@@ -125,10 +125,9 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
-alias pacinfo='grep 'installed' /var/log/pacman.log | grep -v 'upgraded' | sort'
 alias rmdir='rm -rf'
 alias cwipe='cliphist wipe'
-alias usb1="sudo mount /dev/sdd1 /mnt"
+alias usb1="sudo mount /dev/sdb1 /mnt"
 alias pac="sudo pacman -S"
 alias wclass="xprop | grep 'CLASS'"
 alias syst='systemctl status'
@@ -138,7 +137,9 @@ alias syss='systemctl start'
 alias cya='shutdown -h now'
 alias audio='pavucontrol'
 alias up='sudo pacman -Syu'
-alias ls='exa -al'
+alias ls='eza --all --header --long --sort=modified $eza_params'
+alias la='eza -lbhHigUmuSa@'
+alias tree='eza --tree $eza_params'
 alias kat='bat'
 alias ga='git add .'
 alias gad='git add'
@@ -148,7 +149,6 @@ alias gpl='git pull'
 alias ps1='ps -auxwf'
 alias psg='ps -ef | grep'
 alias dz='aunpack'
-alias pacsize='LC_ALL=C.UTF-8 pacman -Qi | awk '\''/^Name/{name=$3} /^Installed Size/{print $4$5, name}'\'' | LC_ALL=C.UTF-8 sort -h | grep'
 alias pacc='sudo pacman -Scc'
 alias ipv6on='sudo sysctl net.ipv6.conf.all.disable_ipv6=0'
 alias ipv6off='sudo sysctl net.ipv6.conf.all.disable_ipv6=1'
@@ -158,6 +158,9 @@ alias hypr="codium ~/.config/hypr/hyprland.conf"
 alias zshsrc="codium ~/.zshrc"
 alias htb="sudo openvpn ~/Documents/CTF/HTB/lab_b4ndit23.ovpn"
 alias android-studio='QT_QPA_PLATFORM=xcb android-studio'
+alias pacmanff="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
+alias pacinfo="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
+alias ff="find . -type f | fzf --multi --preview 'if file --mime-encoding {} | grep -q binary; then strings {} | head -100; else bat --color=always {}; fi' --preview-window 'right:60%'"
 ## Functions ##
 function cheat() { curl -m 7 "http://cheat.sh/$1"; }
 function rmk() { scrub -p dod $1; shred -zun 10 -v $1; }
