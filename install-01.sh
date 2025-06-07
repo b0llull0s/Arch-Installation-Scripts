@@ -91,7 +91,7 @@ install_packages blueman bluez bluez-utils
 enable_services bluetooth
 
 # Utils
-install_packages waybar ranger btop obsidian libreoffice-fresh signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn proton-vpn-gtk-app jq obs xdg-desktop-portal-hyprland gimp blender inkscape steam timeshift qemu-user
+install_packages waybar ranger fzf btop obsidian libreoffice-fresh signal-desktop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn proton-vpn-gtk-app jq obs xdg-desktop-portal-hyprland gimp blender inkscape steam timeshift qemu-user
 
 # Wireshark
 install_packages wireshark-qt
