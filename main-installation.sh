@@ -26,7 +26,7 @@ error_exit() {
 install_packages() {
     for package in "$@"; do
         if ! pacman -Q "$package" &>/dev/null; then
-            sudo pacman -Sy --noconfirm "$package" || error_exit "Failed to install $package"
+            sudo pacman -S --noconfirm "$package" || error_exit "Failed to install $package"
         fi
     done
 }
@@ -34,7 +34,7 @@ install_packages() {
 install_packages_yay() {
     for package in "$@"; do
         if ! yay -Q "$package" &>/dev/null; then
-            yay -Sy --noconfirm "$package" || error_exit "Failed to install $package"
+            yay -S --noconfirm "$package" || error_exit "Failed to install $package"
         fi
     done
 }
@@ -46,7 +46,7 @@ enable_services() {
 }
 
 # Install Hyprland
-sudo pacman -Sy hyprland ly
+install_packages hyprland ly
 
 # Home directories setup
 mkdir -p ~/Downloads ~/Screenshots || error_exit "Failed to create directories"
