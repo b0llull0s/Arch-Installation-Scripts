@@ -98,7 +98,7 @@
         "format": "{icon} {volume}%",
         "tooltip": true,
         "format-muted": "󰽼",
-        "on-click": "pamixer -t",
+        "on-click": "Pavucontrol",
         "on-scroll-up": "pamixer -i 5",
         "on-scroll-down": "pamixer -d 5",
         "scroll-step": 5,
