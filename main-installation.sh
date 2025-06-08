@@ -118,6 +118,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Set pywal
 wal -i ~/Arch-Installation-Script/w4llp4p3rs/1.jpg || error_exit "Failed to set pywal"
+pywalfox install --browser librewolf || || error_exit "Failed to set pywalfox"
 
 # Set Wallpaper
 swww img ~/Arch-Installation-Script/w4llp4p3rs/1.jpg
