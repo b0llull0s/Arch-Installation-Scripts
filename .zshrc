@@ -125,6 +125,8 @@ cat ~/.cache/wal/sequences
 # For a full list of active aliases, run `alias`.
 #
 ## Aliases ##
+alias kill='sudo kill -9 $1'
+alias cd2='clear && cd $1 && ls'
 alias rmdir='rm -rf'
 alias cwipe='cliphist wipe'
 alias usb1="sudo mount /dev/sdb1 /mnt"
