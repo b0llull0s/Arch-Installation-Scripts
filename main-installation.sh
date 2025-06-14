@@ -83,8 +83,8 @@ install_packages qt5-wayland qt6-wayland qt6-base qt6-tools qtcreator
 # Programming & Development
 install_packages cargo go tk geckodriver python-pip python-pywal ncurses cmake
 
-# Sound
-install_packages cmus pamixer pavucontrol
+# Media
+install_packages cmus pamixer pavucontrol vlc
 
 # Bluetooth
 install_packages blueman bluez bluez-utils
@@ -106,7 +106,7 @@ install_packages steam lutris
 install_packages signal-desktop thunderbird
 
 # OBS
-install_packages obs xdg-desktop-portal-hyprland 
+install_packages obs xdg-desktop-portal-hyprland xdg-desktop-portal-wlr
 
 # Wireshark
 install_packages wireshark-qt
