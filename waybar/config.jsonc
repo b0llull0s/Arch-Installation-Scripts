@@ -98,7 +98,7 @@
         "format": "{icon} {volume}%",
         "tooltip": true,
         "format-muted": "󰽼",
-        "on-click": "Pavucontrol",
+        "on-click": "pavucontrol",
         "on-scroll-up": "pamixer -i 5",
         "on-scroll-down": "pamixer -d 5",
         "scroll-step": 5,
@@ -168,6 +168,6 @@
 "custom/cmus": {
     "exec": "~/.config/hypr/scripts/cmus-status.sh",
     "format": "󰝚 {} ",
-    "on-click": "cmus"
+    "on-click": "alacritty -e cmus"
 }
 }
