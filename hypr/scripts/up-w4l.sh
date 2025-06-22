@@ -18,7 +18,7 @@
 # ( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )( o.o )
 #  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ <  > ^ < 
 # Set the path to your wallpaper folder
-WALLPAPER_FOLDER="$HOME/Downloads/w4llp4p3rs"
+WALLPAPER_FOLDER="$HOME/w4llp4p3rs"
 
 # Function to set wallpaper and reset Waybar
 set_wallpaper() {
