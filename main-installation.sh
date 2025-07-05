@@ -75,7 +75,7 @@ sudo pacman -Sy --noconfirm pacman-contrib || error_exit "Failed to install pacm
 sudo systemctl enable --now paccache.timer || error_exit "Failed to enable paccache.timer"
 
 # Binaries
-install_packages zsh alacritty wofi curl wget locate less tree neofetch exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd tinyxxd 
+install_packages zsh alacritty wofi curl wget locate less tree exa bat apparmor whois tcpdump exfat-utils openssh strace lsof fwupd tinyxxd 
 
 # Qt
 install_packages qt5-wayland qt6-wayland qt6-base qt6-tools qtcreator
@@ -106,7 +106,7 @@ install_packages steam lutris
 install_packages signal-desktop thunderbird
 
 # OBS
-install_packages obs xdg-desktop-portal-hyprland xdg-desktop-portal-wlr
+install_packages obs-studio xdg-desktop-portal-hyprland xdg-desktop-portal-wlr
 
 # Wireshark
 install_packages wireshark-qt
@@ -136,7 +136,7 @@ wal -i ~/Arch-Installation-Script/w4llp4p3rs/1.jpg || error_exit "Failed to set 
 pywalfox install --browser librewolf || || error_exit "Failed to set pywalfox"
 
 # Set Wallpaper
-swww img ~/Arch-Installation-Script/w4llp4p3rs/1.jpg
+swww img ~/Arch-Installation-Scripts/w4llp4p3rs/1.jpg
 
 # .zshsrc
 SCRIPT_DIR=$(dirname "$(realpath "$0")")
