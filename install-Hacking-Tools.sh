@@ -55,7 +55,7 @@ install_packages python-pwntools python-aiosmtpd python-websocket-client python-
 go install github.com/sensepost/gowitness@latest
 
 # Yay Packages
-install_packages_yay ffuf gobuster burpsuite smbmap naabu netexec ruby-evil-winrm whatweb steghide pince caido-desktop rustscan
+install_packages_yay ffuf gobuster burpsuite smbmap naabu netexec ruby-evil-winrm whatweb steghide pince git-dumper-git caido-desktop rustscan
 
 # Posting
 curl -LsSf https://astral.sh/uv/install.sh | sh
