@@ -91,7 +91,7 @@ install_packages blueman bluez bluez-utils
 enable_services bluetooth
 
 # Utils
-install_packages curlie waybar ranger fzf btop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn proton-vpn-gtk-app jq timeshift qemu-user perl-image-exiftool firejail macchanger
+install_packages curlie waybar ranger fzf btop cliphist pam_yubico pam-u2f atool unzip zip sxiv p7zip net-tools openvpn proton-vpn-gtk-app jq timeshift qemu-user perl-image-exiftool firejail docker-compose macchanger
 
 # Graphic Design
 install_packages gimp blender inkscape 
