@@ -81,7 +81,7 @@ install_packages zsh alacritty wofi curl wget locate less tree exa bat apparmor 
 install_packages qt5-wayland qt6-wayland qt6-base qt6-tools qtcreator
 
 # Programming & Development
-install_packages cargo go tk geckodriver python-pip python-pywal ncurses cmake pngquant oxipng
+install_packages cargo go tk geckodriver python-pip python-pywal ncurses cmake pngquant oxipng mkcert
 
 # Media
 install_packages cmus pamixer pavucontrol vlc
