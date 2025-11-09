@@ -213,6 +213,10 @@ sudo pacman -Scc
 ```sh
 find / -xdev -name core -ls -o  -path "/lib*" -prune
 ```
+- Install `flatpak` applications using your home folder instead of root:
+```sh
+flatpak install --user appName.flatpak
+``` 
 > [!CAUTION]
 >- Currently Virtualbox Can't Use Fullscreen Mode On Wayland by default.
 >- To fix this, go to "User Interface" on the "Settings" from your VM and uncheck "Show in Full-screen/Seamless".
