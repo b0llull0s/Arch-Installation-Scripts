@@ -165,15 +165,15 @@ aa-enabled
 # Now parse the profiles
 sudo apparmor_parser /usr/share/apparmor/extra-profiles
 ```
-
-![Screenshot](screenshot.png)
-
 ### Pywalfox
 - For `Librewolf` you need to run this command:
 ```bash
 pywalfox install --browser librewolf
 ```
 - And then get the addon like you would normally do
+
+![Screenshot](screenshot.png)
+
 ## Tips:
 
 - Sometimes you may enconter an error retrieving the `blackarch.db` while updating the system, this error is normally related to a mirror having an expired certificate, simply comment that mirror and uncomment another one
