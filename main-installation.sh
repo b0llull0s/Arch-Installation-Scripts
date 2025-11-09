@@ -52,12 +52,16 @@ install_packages hyprland ly
 mkdir -p ~/Downloads ~/Screenshots || error_exit "Failed to create directories"
 
 # Enable Black Arch repo
-curl -fsSL https://blackarch.org/strap.sh | sudo bash || error_exit "Failed to enable Black Arch repo"
+#curl -fsSL https://blackarch.org/strap.sh | sudo bash || error_exit "Failed to enable Black Arch repo"
 
 # Firewall setup
 install_packages ufw
 sudo ufw enable || error_exit "Failed to enable UFW"
 enable_services ufw.service
+
+# Flatpak
+install_packages flatpak
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # Yay setup
 install_packages base-devel git
