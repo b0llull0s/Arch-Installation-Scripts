@@ -45,19 +45,49 @@ enable_services() {
     done
 }
 
+# Firewall setup
+install_packages ufw
+sudo ufw enable || error_exit "Failed to enable UFW"
+enable_services ufw.service
+
 # Install Hyprland
 install_packages hyprland ly
 
 # Home directories setup
 mkdir -p ~/Downloads ~/Screenshots || error_exit "Failed to create directories"
 
-# Enable Black Arch repo
+# Install Black Arch Basics
 #curl -fsSL https://blackarch.org/strap.sh | sudo bash || error_exit "Failed to enable Black Arch repo"
 
-# Firewall setup
-install_packages ufw
-sudo ufw enable || error_exit "Failed to enable UFW"
-enable_services ufw.service
+# Enable BlackArch repository
+echo -e "\n\033[1;35mEnabling BlackArch repository (lean mode – no tools installed yet)...\033[0m"
+
+# Import and trust the official BlackArch master key
+sudo pacman-key --keyserver keyserver.ubuntu.com --recv-keys 4345771566D76038C7FEB43863EC0ADBEA87E4E3 || error_exit "Failed to recv BlackArch master key"
+sudo pacman-key --lsign-key 4345771566D76038C7FEB43863EC0ADBEA87E4E3 || error_exit "Failed to lsign BlackArch master key"
+
+# Download and install only the keyring
+curl -fsSLO https://blackarch.org/keyring/blackarch-keyring.pkg.tar.zst || error_exit "Failed to download blackarch-keyring"
+sudo pacman -U --noconfirm blackarch-keyring.pkg.tar.zst || error_exit "Failed to install blackarch-keyring"
+rm -f blackarch-keyring.pkg.tar.zst
+
+# Add BlackArch repo to the pacman config file (idempotent)
+if ! grep -q '^\[blackarch\]' /etc/pacman.conf; then
+    cat <<'EOF' | sudo tee -a /etc/pacman.conf > /dev/null
+
+[blackarch]
+Server = https://mirror.blackarch.org/$repo/os/$arch
+EOF
+    echo "BlackArch repo added to /etc/pacman.conf"
+else
+    echo "BlackArch repo already present – skipping duplicate entry"
+fi
+
+# Refresh databases so BlackArch packages are instantly available
+sudo pacman -Syy --noconfirm || error_exit "Failed to refresh package databases (pacman -Syy)"
+
+echo -e "\033[1;32mBlackArch repository enabled successfully! (lean mode)\033[0m"
+echo -e "\033[1;33m→ Tools ready! Example: sudo pacman -S nmap sqlmap metasploit hashcat john\033[0m"
 
 # Flatpak
 install_packages flatpak
